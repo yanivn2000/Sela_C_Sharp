@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sela_c_sharp", "sela_c_sharp\sela_c_sharp.csproj", "{2CC1E676-563B-421D-922B-3062BCBAB10B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conditions", "sela_c_sharp\conditions.csproj", "{2CC1E676-563B-421D-922B-3062BCBAB10B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
