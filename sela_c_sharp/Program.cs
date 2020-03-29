@@ -6,7 +6,7 @@ namespace conditions
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello conditions!");
+            Console.WriteLine("Hello conditions 2!");
         }
     }
 }
