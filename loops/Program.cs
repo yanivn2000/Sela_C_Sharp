@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace conditions
+namespace loops
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello conditions!");
+            Console.WriteLine("Hello loops!");
         }
     }
 }
