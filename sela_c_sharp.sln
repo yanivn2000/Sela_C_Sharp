@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loops", "loops\loops.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "conditions", "conditions\conditions.csproj", "{8C61B219-D3FD-42E6-B3F1-06B665CBDFC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "random", "random\random.csproj", "{D7BD5F65-E99C-4AA3-B116-99AA33C7F3A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrays", "arrays\arrays.csproj", "{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -25,5 +29,13 @@ Global
 		{8C61B219-D3FD-42E6-B3F1-06B665CBDFC0}.Debug|anycpu.Build.0 = Debug|anycpu
 		{8C61B219-D3FD-42E6-B3F1-06B665CBDFC0}.Release|anycpu.ActiveCfg = Release|anycpu
 		{8C61B219-D3FD-42E6-B3F1-06B665CBDFC0}.Release|anycpu.Build.0 = Release|anycpu
+		{D7BD5F65-E99C-4AA3-B116-99AA33C7F3A0}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D7BD5F65-E99C-4AA3-B116-99AA33C7F3A0}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D7BD5F65-E99C-4AA3-B116-99AA33C7F3A0}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D7BD5F65-E99C-4AA3-B116-99AA33C7F3A0}.Release|anycpu.Build.0 = Release|anycpu
+		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Debug|anycpu.Build.0 = Debug|anycpu
+		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Release|anycpu.ActiveCfg = Release|anycpu
+		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
