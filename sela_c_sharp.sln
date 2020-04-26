@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "random", "random\random.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrays", "arrays\arrays.csproj", "{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{2B7133F9-ADD6-4EAD-87FE-E18748B74C32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -37,5 +39,9 @@ Global
 		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Debug|anycpu.Build.0 = Debug|anycpu
 		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Release|anycpu.ActiveCfg = Release|anycpu
 		{7D6D3215-7ABF-4F2B-B6E4-C119CDEE8FC0}.Release|anycpu.Build.0 = Release|anycpu
+		{2B7133F9-ADD6-4EAD-87FE-E18748B74C32}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{2B7133F9-ADD6-4EAD-87FE-E18748B74C32}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{2B7133F9-ADD6-4EAD-87FE-E18748B74C32}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{2B7133F9-ADD6-4EAD-87FE-E18748B74C32}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
