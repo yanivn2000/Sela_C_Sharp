@@ -8,11 +8,15 @@ namespace Today
         static void Main(string[] args)
         {
 
-            Exc11(args);
-            //Exc12(args);
+            Exc14(args);
             //Exc13(args);
-            //Exc14(args);
-            //Exc15(args);
+            //Exc12(args);
+            //Exc11(args);
+            //test(args);
+            //Exc1(args);
+            //Exc2(args);
+            //Exc3(args);
+            //Exc4(args);
             Console.ReadKey();
         }
 
