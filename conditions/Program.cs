@@ -92,6 +92,7 @@ namespace conditions
                 Console.WriteLine("One of the values is not a number");
             }
         }
+
         static void Main4(string[] args)
         {
             int num1, num2, num3, num4;

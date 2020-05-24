@@ -12,12 +12,10 @@ namespace conditions
                 number-=3;
                 Console.Write($"{number++} ");
             }
-
         }
 
         static void Main6(String[] args)
         {
-
             int number = 0;
             string input = "";
             while (true)
