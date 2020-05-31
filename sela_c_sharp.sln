@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array2DMinMaxSumAvg", "Arra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{01300619-D526-4847-9A1C-95466DA17DF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes_basics", "classes_basics\classes_basics.csproj", "{3D72E987-27E4-420A-9EE9-1A15AE0B7F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -91,5 +95,13 @@ Global
 		{01300619-D526-4847-9A1C-95466DA17DF1}.Debug|anycpu.Build.0 = Debug|anycpu
 		{01300619-D526-4847-9A1C-95466DA17DF1}.Release|anycpu.ActiveCfg = Release|anycpu
 		{01300619-D526-4847-9A1C-95466DA17DF1}.Release|anycpu.Build.0 = Release|anycpu
+		{3D72E987-27E4-420A-9EE9-1A15AE0B7F6C}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{3D72E987-27E4-420A-9EE9-1A15AE0B7F6C}.Debug|anycpu.Build.0 = Debug|anycpu
+		{3D72E987-27E4-420A-9EE9-1A15AE0B7F6C}.Release|anycpu.ActiveCfg = Release|anycpu
+		{3D72E987-27E4-420A-9EE9-1A15AE0B7F6C}.Release|anycpu.Build.0 = Release|anycpu
+		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Debug|anycpu.Build.0 = Debug|anycpu
+		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Release|anycpu.ActiveCfg = Release|anycpu
+		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
