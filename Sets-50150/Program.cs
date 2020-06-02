@@ -10,8 +10,9 @@ namespace Sets50150
 
             Sets set1 = new Sets();
 
-            int[] array = { 1, 2, 3, 55 };
-            Sets set2 = new Sets(array);
+            //int[] array = { 1, 2, 3, 55 };
+            Sets set2 = new Sets(10, 30, 3000, 3, 100, 2000, 102, 300);
+            //Sets set2 = new Sets(array);
             Console.WriteLine(set2);
 
         }
@@ -21,6 +22,7 @@ namespace Sets50150
     {
         bool[] _set;
         const int _size_set = 1001;
+        string _name;
         //Empty constructor
         public Sets()
         {
@@ -30,20 +32,27 @@ namespace Sets50150
                 _set[i] = false;
             }
         }
-        public Sets(int [] values) : this()
+        public Sets( params int [] values) : this()
         {
             foreach (var value in values)
             {
+                if (value >= _size_set || value < 0) continue;
                 _set[value] = true;
             }
         }
         public override string ToString()
         {
-            string str = $"Array size {_size_set}: \n";
+            string str = "";
+            int counter = 0;
             for (int i = 0; i < _size_set; i++)
             {
-                str += $"index {i}: {_set[i]}\n";
+                if (_set[i])
+                {
+                    str += $"{i}\n";
+                    counter++;
+                }
             }
+            str += $"Number of elements: {counter}";
             return str;
         }
     }
