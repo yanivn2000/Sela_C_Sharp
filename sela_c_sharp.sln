@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes_basics", "classes_b
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOrientedPartice", "ObjectOrientedPartice\ObjectOrientedPartice.csproj", "{D57D263E-3084-4CBB-87E0-BA62A6EBC140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sets-50150", "Sets-50150\Sets-50150.csproj", "{AEFA5366-01E0-498C-891B-A13D13320DA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -103,5 +107,13 @@ Global
 		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Debug|anycpu.Build.0 = Debug|anycpu
 		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Release|anycpu.ActiveCfg = Release|anycpu
 		{AF3DDB0C-8CFF-4F7E-AA11-1917626EEB71}.Release|anycpu.Build.0 = Release|anycpu
+		{D57D263E-3084-4CBB-87E0-BA62A6EBC140}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D57D263E-3084-4CBB-87E0-BA62A6EBC140}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D57D263E-3084-4CBB-87E0-BA62A6EBC140}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D57D263E-3084-4CBB-87E0-BA62A6EBC140}.Release|anycpu.Build.0 = Release|anycpu
+		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Debug|anycpu.Build.0 = Debug|anycpu
+		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Release|anycpu.ActiveCfg = Release|anycpu
+		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
