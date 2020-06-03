@@ -5,9 +5,22 @@ namespace Sets50150
 {
     class MainClass
     {
+        static Random rand = new Random();
+
+        public static int[] GenerateIntArray(int size, int from, int to)
+        {
+            int[] array = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = rand.Next(from,to+1);
+            }
+            return array;
+        }
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to my Set project");
+            //use random to initialize my set
+            //Sets set1 = new Sets(GenerateIntArray(12, 0, 1001));
 
             Sets set1 = new Sets(7, 30, 31, 301, 401);
 

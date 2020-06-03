@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOrientedPartice", "Ob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sets-50150", "Sets-50150\Sets-50150.csproj", "{AEFA5366-01E0-498C-891B-A13D13320DA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deligate", "Deligate\Deligate.csproj", "{84A64449-85B2-47A8-960D-876E0798DC31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -115,5 +117,9 @@ Global
 		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Debug|anycpu.Build.0 = Debug|anycpu
 		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Release|anycpu.ActiveCfg = Release|anycpu
 		{AEFA5366-01E0-498C-891B-A13D13320DA3}.Release|anycpu.Build.0 = Release|anycpu
+		{84A64449-85B2-47A8-960D-876E0798DC31}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{84A64449-85B2-47A8-960D-876E0798DC31}.Debug|anycpu.Build.0 = Debug|anycpu
+		{84A64449-85B2-47A8-960D-876E0798DC31}.Release|anycpu.ActiveCfg = Release|anycpu
+		{84A64449-85B2-47A8-960D-876E0798DC31}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
