@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByRefValue", "ByRefValue\By
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "Params\Params.csproj", "{B5D3325A-7156-47BA-B0E1-2F89C516D709}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThisObject", "ThisObject\ThisObject.csproj", "{6933EEF5-FAA5-4E9E-B596-AC4A7B180C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{C8427262-826D-40EC-8E1F-252B2B7A5608}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -163,5 +167,13 @@ Global
 		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Debug|anycpu.Build.0 = Debug|anycpu
 		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Release|anycpu.ActiveCfg = Release|anycpu
 		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Release|anycpu.Build.0 = Release|anycpu
+		{6933EEF5-FAA5-4E9E-B596-AC4A7B180C2B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{6933EEF5-FAA5-4E9E-B596-AC4A7B180C2B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{6933EEF5-FAA5-4E9E-B596-AC4A7B180C2B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{6933EEF5-FAA5-4E9E-B596-AC4A7B180C2B}.Release|anycpu.Build.0 = Release|anycpu
+		{C8427262-826D-40EC-8E1F-252B2B7A5608}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{C8427262-826D-40EC-8E1F-252B2B7A5608}.Debug|anycpu.Build.0 = Debug|anycpu
+		{C8427262-826D-40EC-8E1F-252B2B7A5608}.Release|anycpu.ActiveCfg = Release|anycpu
+		{C8427262-826D-40EC-8E1F-252B2B7A5608}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

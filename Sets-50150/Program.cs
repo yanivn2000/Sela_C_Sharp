@@ -146,6 +146,9 @@ namespace Sets50150
             //set the true values of set to this
             for (int i = 0; i < _size_set; i++)
             {
+                //_set: 2 4 6
+                //obj._set: 6 7 8
+                //_set: 2 4 6 7 8
                 //_set[i] = (_set[i] || obj._set[i]);
                 if (obj._set[i])
                     _set[i] = true;
@@ -158,6 +161,10 @@ namespace Sets50150
             //set the true values of set to this
             for (int i = 0; i < _size_set; i++)
             {
+                //false && true ==> false
+                //false && false ==> false
+                //true && false ==> false
+                //true && true ==> true
                 _set[i] = (_set[i] && obj._set[i]);
             }
         }

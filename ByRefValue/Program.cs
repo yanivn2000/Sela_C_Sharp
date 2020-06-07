@@ -14,7 +14,10 @@ namespace ByRefValue
             Console.WriteLine($"argument value is {argument}");
             Console.WriteLine($"add 20 by ref to argument");
 
-            obj.Add20(ref argument);
+            obj.Add20ByValue(argument);
+            Console.WriteLine($"argument value is {argument}");
+
+            obj.Add20ByRef(ref argument);
             Console.WriteLine($"argument value is {argument}");
 
             /*
@@ -75,7 +78,13 @@ namespace ByRefValue
     {
         private decimal Price = 300;//this will be returned by ref
         private int Age = 30;//this will be returned by ref
-        public void Add20(ref int val)
+        public void Add20ByValue(int val)
+        {
+            //(int val = argument)
+            //val += 30;
+            val += 20;
+        }
+        public void Add20ByRef(ref int val)
         {
             val += 20;
         }
