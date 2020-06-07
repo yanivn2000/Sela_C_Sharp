@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClass", "StaticClass\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByRefValue", "ByRefValue\ByRefValue.csproj", "{FFBADA69-BE8A-4D63-A8C8-C83E3039ADA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Params", "Params\Params.csproj", "{B5D3325A-7156-47BA-B0E1-2F89C516D709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -157,5 +159,9 @@ Global
 		{FFBADA69-BE8A-4D63-A8C8-C83E3039ADA2}.Debug|anycpu.Build.0 = Debug|anycpu
 		{FFBADA69-BE8A-4D63-A8C8-C83E3039ADA2}.Release|anycpu.ActiveCfg = Release|anycpu
 		{FFBADA69-BE8A-4D63-A8C8-C83E3039ADA2}.Release|anycpu.Build.0 = Release|anycpu
+		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B5D3325A-7156-47BA-B0E1-2F89C516D709}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
