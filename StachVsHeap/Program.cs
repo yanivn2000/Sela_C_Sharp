@@ -16,13 +16,11 @@ namespace StachVsHeap
             Console.WriteLine("Changing score1 to 100");
             Console.WriteLine($"score1 = {score1}, score2 = {score2}");
 
-            Report report1 = new Report//pointer on the stack, object on the heap
-            {
-                Title = "First Report",
-                Pages = 11
-            };
+            Report report1 = new Report("First Report", 1);//pointer on the stack, object on the heap
+
             //both pointers point to the same object on th eheap.
             Report report2 = report1;//copy of pointer (!!!) on the stack (NO COPY OF OBJECT on the HEAP!!)
+            //Report report2 = new Report(report1);//CREATE NEW REPORT AND COPY VALUES FROM REPORT1
             report1.Display();
             report2.Display();
 
@@ -61,6 +59,16 @@ namespace StachVsHeap
         public string Title { get; set; }
         public int Pages { get; set; }
 
+        public Report(string title1, int page1)
+        {
+            Title = title1;
+            Pages = page1;
+        }
+        public Report(Report obj)
+        {
+            Title = obj.Title;
+            Pages = obj.Pages;
+        }
         public void Display()
         {
             Console.WriteLine($"Title {Title} has {Pages} pages");
