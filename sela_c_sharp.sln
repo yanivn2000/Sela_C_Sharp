@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sets-50150", "Sets-50150\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deligate", "Deligate\Deligate.csproj", "{84A64449-85B2-47A8-960D-876E0798DC31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StachVsHeap", "StachVsHeap\StachVsHeap.csproj", "{C7219FF2-E86A-440D-8B56-F6B2560C2EA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackVsHeap", "StachVsHeap\StackVsHeap.csproj", "{C7219FF2-E86A-440D-8B56-F6B2560C2EA0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShallowVsDeepCopy", "ShallowVsDeepCopy\ShallowVsDeepCopy.csproj", "{107A85F9-1A46-4737-9A62-F02519044F3D}"
 EndProject
