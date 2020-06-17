@@ -6,47 +6,65 @@
  * For information about the type-testing is operator see the is operator section of the Type-testing
  * and cast operators article.
  */
+
+
+// taking a class 
+public class P { }
+
+// taking a class 
+// derived from P 
+public class P1 : P { }
+
+// taking a class 
+public class P2 { }
+
 namespace IsOperator
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
-    }
-    public class Employee : IComparable
-    {
-        public String Name { get; set; }
-        public int Id { get; set; }
+            // creating an instance 
+            // of class P 
+            P o1 = new P();
 
-        public int CompareTo(Object o)
-        {
-            if (o is Employee e)
-            {
-                return Name.CompareTo(e.Name);
-            }
-            throw new ArgumentException("o is not an Employee object.");
-        }
-    }
-    /*
-     * Without pattern matching, this code might be written as follows.
-     * The use of type pattern matching produces more compact, readable code by eliminating the
-     * need to test whether the result of a conversion is a null.
-     */
-    public class Employee2 : IComparable
-    {
-        public String Name { get; set; }
-        public int Id { get; set; }
+            // creating an instance 
+            // of class P1 
+            P1 o2 = new P1();
 
-        public int CompareTo(Object o)
-        {
-            var e = o as Employee2;
-            if (e == null)
-            {
-                throw new ArgumentException("o is not an Employee object.");
-            }
-            return Name.CompareTo(e.Name);
+            // checking whether 'o1' 
+            // is of type 'P' 
+            Console.WriteLine(o1 is P);
+
+            // checking whether 'o1' is 
+            // of type Object class 
+            // (Base class for all classes) 
+            Console.WriteLine(o1 is Object);
+
+            // checking whether 'o2' 
+            // is of type 'P1' 
+            Console.WriteLine(o2 is P1);
+
+            // checking whether 'o2' is 
+            // of type Object class 
+            // (Base class for all classes) 
+            Console.WriteLine(o2 is Object);
+
+            // checking whether 'o2' 
+            // is of type 'P' 
+            // it will return true as P1 
+            // is derived from P 
+            Console.WriteLine(o2 is P1);
+
+            // checking whether o1 
+            // is of type P2 
+            // it will return false 
+            Console.WriteLine(o1 is P2);
+
+            // checking whether o2 
+            // is of type P2 
+            // it will return false 
+            Console.WriteLine(o2 is P2);
         }
     }
     /*
