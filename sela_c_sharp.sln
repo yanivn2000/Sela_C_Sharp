@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterfaceImplementa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareInterfaces", "CompareInterfaces\CompareInterfaces.csproj", "{2A387715-7EDC-4D36-8DE4-AF393B7F58F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOperators", "ClassOperators\ClassOperators.csproj", "{A04C554B-5285-4514-8466-B8FED944656D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -265,5 +267,9 @@ Global
 		{2A387715-7EDC-4D36-8DE4-AF393B7F58F6}.Debug|anycpu.Build.0 = Debug|anycpu
 		{2A387715-7EDC-4D36-8DE4-AF393B7F58F6}.Release|anycpu.ActiveCfg = Release|anycpu
 		{2A387715-7EDC-4D36-8DE4-AF393B7F58F6}.Release|anycpu.Build.0 = Release|anycpu
+		{A04C554B-5285-4514-8466-B8FED944656D}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{A04C554B-5285-4514-8466-B8FED944656D}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A04C554B-5285-4514-8466-B8FED944656D}.Release|anycpu.ActiveCfg = Release|anycpu
+		{A04C554B-5285-4514-8466-B8FED944656D}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

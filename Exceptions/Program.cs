@@ -144,7 +144,8 @@ namespace Exceptions
         {
             if (original == null)
             {
-                throw new System.ArgumentException("Parameter cannot be null", "original");
+                Exception exc = new System.ArgumentException("Parameter cannot be null", "original");
+                throw exc;
             }
         }
 
@@ -167,6 +168,7 @@ namespace Exceptions
     public class illegalCardException : Exception
     {
         public illegalCardException()
+            : base("this is an empty exception")
         {
         }
 

@@ -15,6 +15,7 @@ namespace ExplicitInterfaceImplementation
     public interface IControl
     {
         void Paint();
+        void foo();
     }
     public interface ISurface
     {
@@ -22,6 +23,7 @@ namespace ExplicitInterfaceImplementation
     }
     public class SampleClass : IControl, ISurface
     {
+        public void foo() { Console.WriteLine("fooooo"); }
         // Both ISurface.Paint and IControl.Paint call this method.
         public void Paint()
         {
@@ -31,6 +33,8 @@ namespace ExplicitInterfaceImplementation
     //Explicit Method implementation
     public class SampleClassExplicit : IControl, ISurface
     {
+        public void foo() { Console.WriteLine("fooooo"); }
+
         void IControl.Paint()
         {
             System.Console.WriteLine("IControl.Paint");
