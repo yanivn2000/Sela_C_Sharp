@@ -9,6 +9,8 @@ namespace Enum
 
             Console.WriteLine($"{Season.Autumn}");
 
+            string str = $"{Days.Friday}";
+            string str1 = Days.Friday.ToString();
 
             //c = 0x00001010 = 10
             //a = 0x00000001 = 1

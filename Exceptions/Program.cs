@@ -42,6 +42,7 @@ namespace Exceptions
 {
     class MainClass
     {
+        //Exception IlligalCardException
         public static void Main(string[] args)
         {
 
@@ -49,11 +50,14 @@ namespace Exceptions
             int[] bs1 = new int[10];
             bool dontStop = true;
             //Using while - Exception handling recovery code
+            int counter = 0;
             while (dontStop)
             {
+                counter++;
                 Console.WriteLine("please enter an index");
                 string index = Console.ReadLine();
                 num = int.Parse(index);
+                
                 //When an argument to a method causes an exception.
                 try
                 {
@@ -62,11 +66,12 @@ namespace Exceptions
                 }
                 catch (IndexOutOfRangeException e)
                 {
+                    //throw new illegalCardException(e.Message, counter);
                     Console.WriteLine("Index was out of range");
                     Console.WriteLine(e.Message);
-
                 }
             }
+
             //The method cannot complete its defined functionality.
             try
             {
@@ -90,6 +95,11 @@ namespace Exceptions
                 WriteLog();
             }
             catch (InvalidOperationException e)
+            {
+                Console.WriteLine("Write file has failed");
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
             {
                 Console.WriteLine("Write file has failed");
                 Console.WriteLine(e.Message);
@@ -122,9 +132,9 @@ namespace Exceptions
             try
             {
                 Console.WriteLine("Do something wrong");
-                throw new EmployeeListNotFoundException("This is a user defined exception");
+                throw new illegalCardException("This is a user defined exception");
             }
-            catch (EmployeeListNotFoundException e)
+            catch (illegalCardException e)
             {
                 Console.WriteLine($"EmployeeListNotFoundException: {e.Message}");
             }
@@ -154,18 +164,21 @@ namespace Exceptions
     //user-defined exception
     //When creating your own exceptions, end the class name of the user-defined exception with the word "Exception",
     //and implement the three common constructors, as shown in the following example.
-    public class EmployeeListNotFoundException : Exception
+    public class illegalCardException : Exception
     {
-        public EmployeeListNotFoundException()
+        public illegalCardException()
         {
         }
 
-        public EmployeeListNotFoundException(string message)
+        public illegalCardException(string message, int num_of_tries)
+            : base(message + $"Card deck: {num_of_tries}")
+        {
+        }
+        public illegalCardException(string message)
             : base(message)
         {
         }
-
-        public EmployeeListNotFoundException(string message, Exception inner)
+        public illegalCardException(string message, Exception inner)
             : base(message, inner)
         {
         }
