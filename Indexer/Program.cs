@@ -26,8 +26,7 @@ namespace Indexer
         // Array of temperature values
         private float[] temps = new float[10] { 56.2F, 56.7F, 56.5F, 56.9F, 58.8F,
                                             61.3F, 65.9F, 62.1F, 59.2F, 57.5F };
-        private float[] temps2 = new float[10] { 56.2F, 56.7F, 56.5F, 56.9F, 58.8F,
-                                            61.3F, 65.9F, 62.1F, 59.2F, 57.5F };
+
         // To enable client code to validate input
         // when accessing your indexer.
         public int Length
@@ -53,12 +52,12 @@ namespace Indexer
         {
             get
             {
-                return temps2[index];
+                return temps[index];
             }
 
             set
             {
-                temps2[index] = value;
+                temps[index] = value;
             }
         }
     }

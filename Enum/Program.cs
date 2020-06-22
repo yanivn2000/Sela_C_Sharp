@@ -50,11 +50,11 @@ namespace Enum
             int num = rand.Next((int)Season.FIRST, (int)Season.LAST+1);
             Console.WriteLine($"Random season: {(Season)num}");
             //More testing:
+            Console.WriteLine($"Random season: {(Season)0}");
             Console.WriteLine($"Random season: {(Season)1}");
             Console.WriteLine($"Random season: {(Season)2}");
             Console.WriteLine($"Random season: {(Season)3}");
             Console.WriteLine($"Random season: {Season.Autumn}");
-
 
         }
     }
@@ -85,7 +85,7 @@ namespace Enum
         Friday = 0b_0001_0000,  // 16
         Saturday = 0b_0010_0000,  // 32
         Sunday = 0b_0100_0000,  // 64
-        Weekend = Saturday | Sunday
+        Weekend = Saturday | Sunday // 0b_0010_0000 | 0b_0100_0000 = 0b_0110_0000
     }
 
 

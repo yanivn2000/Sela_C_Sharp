@@ -89,6 +89,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareInterfaces", "Compar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOperators", "ClassOperators\ClassOperators.csproj", "{A04C554B-5285-4514-8466-B8FED944656D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveFindMaxArray", "RecursiveFindMaxArray\RecursiveFindMaxArray.csproj", "{20F102C8-870E-4627-BF92-20EC6C55DA39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveGCD", "RecursiveGCD\RecursiveGCD.csproj", "{9E8E7DAD-65FD-408D-A998-F32BEF397288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePalindrome", "RecursivePalindrome\RecursivePalindrome.csproj", "{F74DAE45-9609-4E02-840D-C4FA40110EA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintStringBothWays", "RecursivePrintStringBothWays\RecursivePrintStringBothWays.csproj", "{69418C14-4D61-4AD1-98B3-A468DB1D7569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -271,5 +279,21 @@ Global
 		{A04C554B-5285-4514-8466-B8FED944656D}.Debug|anycpu.Build.0 = Debug|anycpu
 		{A04C554B-5285-4514-8466-B8FED944656D}.Release|anycpu.ActiveCfg = Release|anycpu
 		{A04C554B-5285-4514-8466-B8FED944656D}.Release|anycpu.Build.0 = Release|anycpu
+		{20F102C8-870E-4627-BF92-20EC6C55DA39}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{20F102C8-870E-4627-BF92-20EC6C55DA39}.Debug|anycpu.Build.0 = Debug|anycpu
+		{20F102C8-870E-4627-BF92-20EC6C55DA39}.Release|anycpu.ActiveCfg = Release|anycpu
+		{20F102C8-870E-4627-BF92-20EC6C55DA39}.Release|anycpu.Build.0 = Release|anycpu
+		{9E8E7DAD-65FD-408D-A998-F32BEF397288}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{9E8E7DAD-65FD-408D-A998-F32BEF397288}.Debug|anycpu.Build.0 = Debug|anycpu
+		{9E8E7DAD-65FD-408D-A998-F32BEF397288}.Release|anycpu.ActiveCfg = Release|anycpu
+		{9E8E7DAD-65FD-408D-A998-F32BEF397288}.Release|anycpu.Build.0 = Release|anycpu
+		{F74DAE45-9609-4E02-840D-C4FA40110EA1}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{F74DAE45-9609-4E02-840D-C4FA40110EA1}.Debug|anycpu.Build.0 = Debug|anycpu
+		{F74DAE45-9609-4E02-840D-C4FA40110EA1}.Release|anycpu.ActiveCfg = Release|anycpu
+		{F74DAE45-9609-4E02-840D-C4FA40110EA1}.Release|anycpu.Build.0 = Release|anycpu
+		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Debug|anycpu.Build.0 = Debug|anycpu
+		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Release|anycpu.ActiveCfg = Release|anycpu
+		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
