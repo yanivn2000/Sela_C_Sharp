@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePalindrome", "Recu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursivePrintStringBothWays", "RecursivePrintStringBothWays\RecursivePrintStringBothWays.csproj", "{69418C14-4D61-4AD1-98B3-A468DB1D7569}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumerablePersons", "IEnumerable\IEnumerablePersons.csproj", "{BAB38D2E-9DE2-4527-8056-2348586BB93B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -295,5 +297,9 @@ Global
 		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Debug|anycpu.Build.0 = Debug|anycpu
 		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Release|anycpu.ActiveCfg = Release|anycpu
 		{69418C14-4D61-4AD1-98B3-A468DB1D7569}.Release|anycpu.Build.0 = Release|anycpu
+		{BAB38D2E-9DE2-4527-8056-2348586BB93B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BAB38D2E-9DE2-4527-8056-2348586BB93B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BAB38D2E-9DE2-4527-8056-2348586BB93B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BAB38D2E-9DE2-4527-8056-2348586BB93B}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

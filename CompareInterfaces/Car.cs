@@ -18,6 +18,11 @@ using System.Collections;
  * Using IComparer is a two-step process. First, declare a class that implements IComparer, and then implement the Compare method:
 */
 
+//IComparable - Mandatory to implement CompareTo (default compare when we use for example Array.Sort())
+//IComparer (1) - Mandatory to implement IComparer.Compare
+//IComparer (2) - Mandatory to implement IComparer.Compare
+//IComparer (3) - Mandatory to implement IComparer.Compare
+
 namespace CompareInterfaces
 {
     public class car : System.IComparable
@@ -35,7 +40,6 @@ namespace CompareInterfaces
             int res = String.Compare(this._manufecturer, c._manufecturer);// -1 a z or +1 z a
             return res;
         }
-
         // Beginning of nested classes.
 
         // Nested class to do ascending sort on year property.
@@ -54,6 +58,27 @@ namespace CompareInterfaces
 
                 else
                     return 0;
+            }
+        }
+        // Nested class to do ascending sort on year property
+        //if years equal then it will compare the manufecturer
+        private class sortYearAscendingHelper2 : IComparer
+        {
+            int IComparer.Compare(object a, object b)
+            {
+                car c1 = (car)a;
+                car c2 = (car)b;
+
+                if (c1._year > c2._year)
+                    return 1;
+
+                if (c1._year < c2._year)
+                    return -1;
+
+                else
+                {
+                    return String.Compare(c1._manufecturer, c2._manufecturer); ;
+                }
             }
         }
 
@@ -108,6 +133,11 @@ namespace CompareInterfaces
             return new sortYearAscendingHelper();
         }
 
+        // Method to return IComparer object for sort helper.
+        public static IComparer sortYearAscending2()
+        {
+            return new sortYearAscendingHelper2();//if year equels sort by manufecturer
+        }
         // Method to return IComparer object for sort helper.
         public static IComparer sortYearDescending()
         {

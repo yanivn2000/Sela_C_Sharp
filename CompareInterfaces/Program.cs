@@ -7,10 +7,11 @@ namespace CompareInterfaces
         static void Main(string[] args)
         {
             // Create an arary of car objects.
-            car[] arrayOfCars = new car[6]
+            car[] arrayOfCars = new car[7]
             {
             new car("Ford",1992, "Red"),
             new car("Fiat",1988, "Blue"),
+            new car("Jaguar",1932, "White"),
             new car("Buick",1932, "Green"),
             new car("Ford",1932, "Brawn"),
             new car("Dodge",1999, "Black"),
@@ -34,15 +35,21 @@ namespace CompareInterfaces
                 Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo ascending sort of numeric value with IComparer.
-            //car.sortYearAscending() - returns an object of a class that inherits IComparer
             Array.Sort(arrayOfCars, car.sortYearAscending());
             Console.WriteLine("\nArray - Sorted by Year (Ascending - IComparer)\n");
 
             foreach (car c in arrayOfCars)
                 Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
+
+            // Demo ascending sort of numeric value with IComparer.
+            Array.Sort(arrayOfCars, car.sortYearAscending2());
+            Console.WriteLine("\nArray - Sorted by Year (Ascending - IComparer) and manufecturer\n");
+
+            foreach (car c in arrayOfCars)
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
+
             // Demo descending sort of string value with IComparer.
-            //car.sortMakeDescending() - returns an object of a class that inherits IComparer
             Array.Sort(arrayOfCars, car.sortMakeDescending());
             Console.WriteLine("\nArray - Sorted by Make (Descending - IComparer)\n");
 
@@ -50,7 +57,6 @@ namespace CompareInterfaces
                 Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo descending sort of numeric value using IComparer.
-            //car.sortYearDescending() - returns an object of a class that inherits IComparer
             Array.Sort(arrayOfCars, car.sortYearDescending());
             Console.WriteLine("\nArray - Sorted by Year (Descending - IComparer)\n");
 
