@@ -21,7 +21,7 @@ namespace CompareInterfaces
             Console.WriteLine("Array - Unsorted\n");
 
             foreach (car c in arrayOfCars)
-                Console.WriteLine(c.Make + "\t\t" + c.Year);
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo IComparable by sorting array with "default" sort order.
             //sortYearAscendingHelper(arrayOfCars);
@@ -31,7 +31,7 @@ namespace CompareInterfaces
             Console.WriteLine("\nArray - default Sort\n");
 
             foreach (car c in arrayOfCars)
-                Console.WriteLine(c.Make + "\t\t" + c.Year);
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo ascending sort of numeric value with IComparer.
             //car.sortYearAscending() - returns an object of a class that inherits IComparer
@@ -39,7 +39,7 @@ namespace CompareInterfaces
             Console.WriteLine("\nArray - Sorted by Year (Ascending - IComparer)\n");
 
             foreach (car c in arrayOfCars)
-                Console.WriteLine(c.Make + "\t\t" + c.Year);
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo descending sort of string value with IComparer.
             //car.sortMakeDescending() - returns an object of a class that inherits IComparer
@@ -47,7 +47,7 @@ namespace CompareInterfaces
             Console.WriteLine("\nArray - Sorted by Make (Descending - IComparer)\n");
 
             foreach (car c in arrayOfCars)
-                Console.WriteLine(c.Make + "\t\t" + c.Year);
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
 
             // Demo descending sort of numeric value using IComparer.
             //car.sortYearDescending() - returns an object of a class that inherits IComparer
@@ -55,7 +55,13 @@ namespace CompareInterfaces
             Console.WriteLine("\nArray - Sorted by Year (Descending - IComparer)\n");
 
             foreach (car c in arrayOfCars)
-                Console.WriteLine(c.Make + "\t\t" + c.Year);
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Year);
+
+            Array.Sort(arrayOfCars, car.sortColorAscending());
+            Console.WriteLine("\nArray - Sorted by Color (Ascending - IComparer)\n");
+            foreach (car c in arrayOfCars)
+                Console.WriteLine(c.Manufecturer + "\t\t" + c.Color);
+
 
             Console.ReadLine();
         }

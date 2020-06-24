@@ -22,12 +22,17 @@ namespace CompareInterfaces
 {
     public class car : System.IComparable
     {
+        // End of nested classes.
+        private int _year;
+        private string _manufecturer;
+        private string _color;
+
         // Implement IComparable CompareTo to provide default sort order.
         //-1 0 1
         int IComparable.CompareTo(object obj)
         {
             car c = (car)obj;
-            int res = String.Compare(this.Manufacturer, c.Manufacturer);// -1 a z or +1 z a
+            int res = String.Compare(this._manufecturer, c._manufecturer);// -1 a z or +1 z a
             return res;
         }
 
@@ -41,10 +46,10 @@ namespace CompareInterfaces
                 car c1 = (car)a;
                 car c2 = (car)b;
 
-                if (c1.year > c2.year)
+                if (c1._year > c2._year)
                     return 1;
 
-                if (c1.year < c2.year)
+                if (c1._year < c2._year)
                     return -1;
 
                 else
@@ -59,32 +64,42 @@ namespace CompareInterfaces
             {
                 car c1 = (car)a;
                 car c2 = (car)b;
-                return String.Compare(c2.Manufacturer, c1.Manufacturer);
+                return String.Compare(c2._manufecturer, c1._manufecturer);
+            }
+        }
+        
+        private class sortColorAscendingHelper : IComparer
+        {
+            int IComparer.Compare(object a, object b)
+            {
+                car c1 = (car)a;
+                car c2 = (car)b;
+                return String.Compare(c1._color, c2._color);
             }
         }
 
-        // End of nested classes.
-        private int year;
-        private string Manufacturer;
-        private string color;
-
         public car(string Make, int Year, string Color)
         {
-            Manufacturer = Make;
-            year = Year;
-            color = Color;
+            _manufecturer = Make;
+            _year = Year;
+            _color = Color;
         }
 
         public int Year
         {
-            get { return year; }
-            set { year = value; }
+            get { return _year; }
+            set { _year = value; }
         }
 
-        public string Make
+        public string Manufecturer
         {
-            get { return Manufacturer; }
-            set { Manufacturer = value; }
+            get { return _manufecturer; }
+            set { _manufecturer = value; }
+        }
+        public string Color
+        {
+            get { return _color; }
+            set { _color = value; }
         }
 
         // Method to return IComparer object for sort helper.
@@ -104,7 +119,11 @@ namespace CompareInterfaces
         {
             return new sortMakeDescendingHelper();
         }
-
+        // Method to return IComparer object for sort helper.
+        public static IComparer sortColorAscending()
+        {
+            return new sortColorAscendingHelper();
+        }
     }
     // NOT a nested class to do descending sort on year property.
     public class sortYearDescendingHelper : IComparer
