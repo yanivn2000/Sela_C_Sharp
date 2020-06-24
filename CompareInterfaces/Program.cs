@@ -7,7 +7,7 @@ namespace CompareInterfaces
       [STAThread]
         static void Main(string[] args)
         {
-            // Create an arary of car objects.      
+            // Create an arary of car objects.
             car[] arrayOfCars = new car[6]
             {
             new car("Ford",1992),
@@ -25,8 +25,11 @@ namespace CompareInterfaces
                 Console.WriteLine(c.Make + "\t\t" + c.Year);
 
             // Demo IComparable by sorting array with "default" sort order.
-            Array.sortYearAscendingHelper(arrayOfCars);
-            Console.WriteLine("\nArray - Sorted by Make (Ascending - IComparable)\n");
+            //sortYearAscendingHelper(arrayOfCars);
+            //Console.WriteLine("\nArray - Sorted by Make (Ascending - IComparable)\n");
+
+            Array.Sort(arrayOfCars);
+            Console.WriteLine("\nArray - default Sort\n");
 
             foreach (car c in arrayOfCars)
                 Console.WriteLine(c.Make + "\t\t" + c.Year);
