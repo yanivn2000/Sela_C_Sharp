@@ -4,18 +4,17 @@ namespace CompareInterfaces
 {
     class MainClass
     {
-      [STAThread]
         static void Main(string[] args)
         {
             // Create an arary of car objects.
             car[] arrayOfCars = new car[6]
             {
-            new car("Ford",1992),
-            new car("Fiat",1988),
-            new car("Buick",1932),
-            new car("Ford",1932),
-            new car("Dodge",1999),
-            new car("Honda",1977)
+            new car("Ford",1992, "Red"),
+            new car("Fiat",1988, "Blue"),
+            new car("Buick",1932, "Green"),
+            new car("Ford",1932, "Brawn"),
+            new car("Dodge",1999, "Black"),
+            new car("Honda",1977, "Yellow")
             };
 
             // Write out a header for the output.
