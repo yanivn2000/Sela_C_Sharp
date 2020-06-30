@@ -66,7 +66,7 @@ namespace Deligate
             Console.WriteLine("Invocation list has {0} methods.",
                         deligated1.GetInvocationList().Length);
         }
-        public void reverseOrderInvocation()
+        public void reverseOrderInvocation()  
         {
             for (int ctr = deligated1.GetInvocationList().Length - 1; ctr >= 0; ctr--)
             {
@@ -79,7 +79,7 @@ namespace Deligate
         public void LongRunning()
         {
             for (int i = 0; i < 10; i++)
-            {
+            {   
                 deligated1(i);
                 //if(deligated2 != null)
                 //    deligated2(i, 5);
