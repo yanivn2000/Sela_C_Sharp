@@ -4,7 +4,7 @@ namespace Deligate
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args)  
         {
             SomeClass obj = new SomeClass();
             obj.deligated1 += OnCallBack1;
