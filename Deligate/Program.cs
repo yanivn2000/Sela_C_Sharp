@@ -79,10 +79,10 @@ namespace Deligate
         public void LongRunning()
         {
             for (int i = 0; i < 10; i++)
-            {
+            {  
                 deligated1(i);
-                if(deligated2 != null)
-                    deligated2(i, 5);
+                //if(deligated2 != null)
+                //    deligated2(i, 5);
             }
         }
     }
