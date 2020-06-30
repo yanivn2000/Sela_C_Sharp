@@ -7,17 +7,17 @@ namespace Deligate
         public static void Main(string[] args)    
         {
             SomeClass obj = new SomeClass();
-            obj.deligated1 += OnCallBack1;
+            obj.filter += OnFilter;
             //obj.deligated1 += OnCallBack2;
-            obj.deligated2 += OnCallBack3;
-            obj.deligated2 -= OnCallBack3;
+            //obj.deligated2 += OnCallBack3;
+            //obj.deligated2 -= OnCallBack3;
             //Call a method and pass the OnCallBack Method to call
             //obj.addDeligation(OnCallBack1);
             //obj.printDeligations();
             //obj.addDeligation(OnCallBack2);
             //obj.printDeligations();
             //obj.removeDeligation(OnCallBack1);
-            //obj.printDeligations();
+            //obj.printDeligations();  
             obj.LongRunning();
 
             //reverse invocation
@@ -26,9 +26,9 @@ namespace Deligate
             obj.reverseOrderInvocation();
         }
         //The OnCallBack is the method to becalled when call back occures
-        static void OnCallBack1(int i)
+        static bool OnFilter(int i)
         {
-            Console.WriteLine($"OnCallBack1: {i}");
+            return i > 5 ? true : false;
         }
         //The OnCallBack is the method to becalled when call back occures
         static void OnCallBack2(int i)
@@ -43,34 +43,36 @@ namespace Deligate
 
     class SomeClass
     {
-        public CallBack1 deligated1;
+        //deligation declaration
+        public delegate bool CallBack1(int i);
+        public delegate void CallBack2(int i, int j);
+
+        public CallBack1 filter; //public bool filter(int i)
         public CallBack2 deligated2;
 
-        //deligation declaration
-        public delegate void CallBack1(int i);
-        public delegate void CallBack2(int i, int j);
+
 
         //add deligation option 1
         public void addDeligation(CallBack1 obj)
         {
-            deligated1 += obj;
+            filter += obj;
             
         }
         public void removeDeligation(CallBack1 obj)
         {
-            deligated1 -= obj;
+            filter -= obj;
 
         }
         public void printDeligations()
         {
             Console.WriteLine("Invocation list has {0} methods.",
-                        deligated1.GetInvocationList().Length);
+                        filter.GetInvocationList().Length);
         }
         public void reverseOrderInvocation()  
         {
-            for (int ctr = deligated1.GetInvocationList().Length - 1; ctr >= 0; ctr--)
+            for (int ctr = filter.GetInvocationList().Length - 1; ctr >= 0; ctr--)
             {
-                var outputMsg = deligated1.GetInvocationList()[ctr];
+                var outputMsg = filter.GetInvocationList()[ctr];
                 outputMsg.DynamicInvoke(1);
             }
         }
@@ -80,9 +82,11 @@ namespace Deligate
         {
             for (int i = 0; i < 10; i++)
             {   
-                deligated1(i);
-                //if(deligated2 != null)
-                //    deligated2(i, 5);
+                if(filter(i) == true)
+                    Console.WriteLine($"Filter for index {i} is true");
+
+                if(deligated2 != null)
+                    deligated2(i, 5);
             }
         }
     }

@@ -111,6 +111,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventExample", "EventExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandler1", "EventHandler\EventHandler1.csproj", "{C5EB54D1-05E8-46FE-B478-202CCBEB8C94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterEventMichal", "CounterEventMichal\CounterEventMichal.csproj", "{93DDBE7D-A22F-4B50-948F-23E939DFAAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingEx7", "BillingEx7\BillingEx7.csproj", "{9932EAED-73C5-4908-AF0B-CE09C39E264B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample", "LambdaExample\LambdaExample.csproj", "{8A61257E-558D-4615-A465-5E33AEC50F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -337,5 +343,17 @@ Global
 		{C5EB54D1-05E8-46FE-B478-202CCBEB8C94}.Debug|anycpu.Build.0 = Debug|anycpu
 		{C5EB54D1-05E8-46FE-B478-202CCBEB8C94}.Release|anycpu.ActiveCfg = Release|anycpu
 		{C5EB54D1-05E8-46FE-B478-202CCBEB8C94}.Release|anycpu.Build.0 = Release|anycpu
+		{93DDBE7D-A22F-4B50-948F-23E939DFAAC6}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{93DDBE7D-A22F-4B50-948F-23E939DFAAC6}.Debug|anycpu.Build.0 = Debug|anycpu
+		{93DDBE7D-A22F-4B50-948F-23E939DFAAC6}.Release|anycpu.ActiveCfg = Release|anycpu
+		{93DDBE7D-A22F-4B50-948F-23E939DFAAC6}.Release|anycpu.Build.0 = Release|anycpu
+		{9932EAED-73C5-4908-AF0B-CE09C39E264B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{9932EAED-73C5-4908-AF0B-CE09C39E264B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{9932EAED-73C5-4908-AF0B-CE09C39E264B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{9932EAED-73C5-4908-AF0B-CE09C39E264B}.Release|anycpu.Build.0 = Release|anycpu
+		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

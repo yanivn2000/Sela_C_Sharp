@@ -1,9 +1,10 @@
 ﻿using System;
-public delegate void Notify();  // delegate
+
+public delegate void EventHandler();  // delegate
 
 public class ProcessBusinessLogic
 {
-    public event Notify ProcessCompleted; // event
+    public event EventHandler ProcessCompleted; // event
 
     public void StartProcess()
     {
