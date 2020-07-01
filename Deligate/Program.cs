@@ -17,7 +17,7 @@ namespace Deligate
             //obj.addDeligation(OnCallBack2);
             //obj.printDeligations();
             //obj.removeDeligation(OnCallBack1);
-            //obj.printDeligations();  
+            //obj.printDeligations();   
             obj.LongRunning();
 
             //reverse invocation

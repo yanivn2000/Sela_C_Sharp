@@ -117,6 +117,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingEx7", "BillingEx7\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample", "LambdaExample\LambdaExample.csproj", "{8A61257E-558D-4615-A465-5E33AEC50F8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalFunctionsRecursive", "LocalFunctionsRecursive\LocalFunctionsRecursive.csproj", "{B44988DD-FB1C-4F5D-AC0F-4120886D7204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -355,5 +359,13 @@ Global
 		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Debug|anycpu.Build.0 = Debug|anycpu
 		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Release|anycpu.ActiveCfg = Release|anycpu
 		{8A61257E-558D-4615-A465-5E33AEC50F8B}.Release|anycpu.Build.0 = Release|anycpu
+		{B44988DD-FB1C-4F5D-AC0F-4120886D7204}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B44988DD-FB1C-4F5D-AC0F-4120886D7204}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B44988DD-FB1C-4F5D-AC0F-4120886D7204}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B44988DD-FB1C-4F5D-AC0F-4120886D7204}.Release|anycpu.Build.0 = Release|anycpu
+		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
