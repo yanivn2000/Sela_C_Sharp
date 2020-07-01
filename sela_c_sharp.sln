@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalFunctionsRecursive", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEvents", "StudentEvents\StudentEvents.csproj", "{14E4CFF2-0E51-4F5F-98A6-4ADF7102E670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -367,5 +369,9 @@ Global
 		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Debug|anycpu.Build.0 = Debug|anycpu
 		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Release|anycpu.ActiveCfg = Release|anycpu
 		{B0D2CAC7-F721-46B3-A63D-D44F3288C3C8}.Release|anycpu.Build.0 = Release|anycpu
+		{14E4CFF2-0E51-4F5F-98A6-4ADF7102E670}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{14E4CFF2-0E51-4F5F-98A6-4ADF7102E670}.Debug|anycpu.Build.0 = Debug|anycpu
+		{14E4CFF2-0E51-4F5F-98A6-4ADF7102E670}.Release|anycpu.ActiveCfg = Release|anycpu
+		{14E4CFF2-0E51-4F5F-98A6-4ADF7102E670}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
