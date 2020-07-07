@@ -133,6 +133,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToString", "ToString\ToStri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempaturesExcMichal", "TempaturesExcMichal\TempaturesExcMichal.csproj", "{E22B9F98-448E-4AB2-A81B-60587BBC7313}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOAnimals", "OOAnimals\OOAnimals.csproj", "{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -403,5 +405,9 @@ Global
 		{E22B9F98-448E-4AB2-A81B-60587BBC7313}.Debug|anycpu.Build.0 = Debug|anycpu
 		{E22B9F98-448E-4AB2-A81B-60587BBC7313}.Release|anycpu.ActiveCfg = Release|anycpu
 		{E22B9F98-448E-4AB2-A81B-60587BBC7313}.Release|anycpu.Build.0 = Release|anycpu
+		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
