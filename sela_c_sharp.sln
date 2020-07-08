@@ -135,6 +135,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempaturesExcMichal", "Temp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOAnimals", "OOAnimals\OOAnimals.csproj", "{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericInterfaces", "GenericInterfaces\GenericInterfaces.csproj", "{AFE3FFD1-602F-4882-9E4C-50379389AB25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericDeligate", "GenericDeligate\GenericDeligate.csproj", "{12126E0B-08D8-4A16-9E78-707E2027C071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeligateGeneric2", "DeligateGeneric2\DeligateGeneric2.csproj", "{39D2A281-11FA-4F2B-BAA6-0679071B79C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -409,5 +415,17 @@ Global
 		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Debug|anycpu.Build.0 = Debug|anycpu
 		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Release|anycpu.ActiveCfg = Release|anycpu
 		{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}.Release|anycpu.Build.0 = Release|anycpu
+		{AFE3FFD1-602F-4882-9E4C-50379389AB25}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{AFE3FFD1-602F-4882-9E4C-50379389AB25}.Debug|anycpu.Build.0 = Debug|anycpu
+		{AFE3FFD1-602F-4882-9E4C-50379389AB25}.Release|anycpu.ActiveCfg = Release|anycpu
+		{AFE3FFD1-602F-4882-9E4C-50379389AB25}.Release|anycpu.Build.0 = Release|anycpu
+		{12126E0B-08D8-4A16-9E78-707E2027C071}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{12126E0B-08D8-4A16-9E78-707E2027C071}.Debug|anycpu.Build.0 = Debug|anycpu
+		{12126E0B-08D8-4A16-9E78-707E2027C071}.Release|anycpu.ActiveCfg = Release|anycpu
+		{12126E0B-08D8-4A16-9E78-707E2027C071}.Release|anycpu.Build.0 = Release|anycpu
+		{39D2A281-11FA-4F2B-BAA6-0679071B79C2}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{39D2A281-11FA-4F2B-BAA6-0679071B79C2}.Debug|anycpu.Build.0 = Debug|anycpu
+		{39D2A281-11FA-4F2B-BAA6-0679071B79C2}.Release|anycpu.ActiveCfg = Release|anycpu
+		{39D2A281-11FA-4F2B-BAA6-0679071B79C2}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

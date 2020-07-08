@@ -36,22 +36,12 @@ A generic collection is strongly typed (you can store one type of objects into i
 
 namespace Generics
 {
-    class Something
-    {
-        public string _name { get; set; }
-        public Something(string str)
-        {
-            _name = str;
-        }
-        public override bool Equals(Object obj)
-        {
-            return _name == ((Something)obj)._name ? true : false;
-        }
-    }
+
     class Program
     {
         static void Main(string[] args)
         {
+            List<int> list = new List<int>();
             // Compare Integer
             Check<int> obj1 = new Check<int>();
             bool Result = obj1.Compare(5, 7);
@@ -68,11 +58,30 @@ namespace Generics
 
             Console.Read();
         }
-        // Generic class to accept all types of data types  
-        class Check<UnknowDataType>
+        // Generic class to accept all types of data types
+        class Check<T>
         {
+            //T is the type (as if you wrote int, string, Somthing)
+            private T data1;
             // Gerefic function to compare all data types  
-            public bool Compare(UnknowDataType var1, UnknowDataType var2)
+            public bool Compare(T var1, T var2)
+            {
+                if (var1.Equals(var2))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        class Check2
+        {
+            //T is the type (as if you wrote int, string, Somthing)
+            private int data1;
+            // Gerefic function to compare all data types  
+            public bool Compare(int var1, int var2)
             {
                 if (var1.Equals(var2))
                 {
@@ -95,6 +104,18 @@ namespace Generics
             {
                 return false;
             }
+        }
+    }
+    class Something
+    {
+        public string _name { get; set; }
+        public Something(string str)
+        {
+            _name = str;
+        }
+        public override bool Equals(Object obj)
+        {
+            return _name == ((Something)obj)._name ? true : false;
         }
     }
 }

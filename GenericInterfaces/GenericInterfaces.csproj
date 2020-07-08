@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
-    <ProjectGuid>{BA49D64C-C96B-49D2-9FAD-56AAA8F8BA70}</ProjectGuid>
+    <ProjectGuid>{AFE3FFD1-602F-4882-9E4C-50379389AB25}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOAnimals</RootNamespace>
-    <AssemblyName>OOAnimals</AssemblyName>
+    <RootNamespace>GenericInterfaces</RootNamespace>
+    <AssemblyName>GenericInterfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
@@ -34,10 +34,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Animal.cs" />
-    <Compile Include="Mammal.cs" />
-    <Compile Include="Dolphin.cs" />
-    <Compile Include="Human.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
