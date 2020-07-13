@@ -22,27 +22,53 @@ namespace Interface
     }
     interface ISampleInterfaceV2
     {
-        void SampleMethod();
-        int Get9(int num);
-    }
-    class MainClass: ISampleInterfaceV2
+        void SampleMethod();    }
+    class Sample1: ISampleInterfaceV1
     {
         // Explicit interface member implementation:
+        public void SampleMethod()
+        {
+            Console.WriteLine("Sample1 - This is ISampleInterfaceV1:SampleMethod");
+        }
+    }
+    class Sample2 : ISampleInterfaceV1, ISampleInterfaceV2
+    {
+        // Explicit interface member implementation:
+        void ISampleInterfaceV1.SampleMethod()
+        {
+            Console.WriteLine("Sample2 - This is ISampleInterfaceV1:SampleMethod");
+        }
         void ISampleInterfaceV2.SampleMethod()
         {
-            // Method implementation.
+            Console.WriteLine("Sample2 - This is ISampleInterfaceV2:SampleMethod");
         }
-        int ISampleInterfaceV2.Get9(int num)
-        {
-            return 9;
-        }
+    }
+    class MainClass
+    {
         static void Main()
         {
             // Declare an interface instance.
-            ISampleInterfaceV2 obj = new MainClass();
+            ISampleInterfaceV1 obj1 = new Sample1();
+            DoSomething(obj1);
+            // Declare an interface instance.
+            obj1 = new Sample2();
+            DoSomething(obj1);
 
+            Sample2 obj3 = new Sample2();
+            DoSomething(obj3);
             // Call the member.
+        }
+        static void DoSomething(ISampleInterfaceV2 obj)
+        {
             obj.SampleMethod();
+        }
+        static void DoSomething(ISampleInterfaceV1 obj)
+        {
+            obj.SampleMethod();
+        }
+        static void DoSomething(Sample2 obj)
+        {
+            ((ISampleInterfaceV2)obj).SampleMethod();
         }
     }
 }
