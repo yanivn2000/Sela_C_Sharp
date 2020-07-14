@@ -151,6 +151,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListObject", "LinkedL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListGeneric", "LinkedListGeneric\LinkedListGeneric.csproj", "{C8EAB4CB-41AA-4A2E-BDC4-2F1964AC91A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Variables.csproj", "{2525CF90-2666-4178-BCA2-B085D2127AEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -457,5 +459,9 @@ Global
 		{C8EAB4CB-41AA-4A2E-BDC4-2F1964AC91A0}.Debug|anycpu.Build.0 = Debug|anycpu
 		{C8EAB4CB-41AA-4A2E-BDC4-2F1964AC91A0}.Release|anycpu.ActiveCfg = Release|anycpu
 		{C8EAB4CB-41AA-4A2E-BDC4-2F1964AC91A0}.Release|anycpu.Build.0 = Release|anycpu
+		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Debug|anycpu.Build.0 = Debug|anycpu
+		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Release|anycpu.ActiveCfg = Release|anycpu
+		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

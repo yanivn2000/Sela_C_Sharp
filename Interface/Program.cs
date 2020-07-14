@@ -14,6 +14,7 @@
  * 2. You can not inherit multiple class in C#, while you can get multiple contracts using multiple interfaces
  * 
  */
+
 namespace Interface
 {
     interface ISampleInterfaceV1

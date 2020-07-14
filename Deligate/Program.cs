@@ -7,7 +7,8 @@ namespace Deligate
         public static void Main(string[] args)    
         {
             SomeClass obj = new SomeClass();
-            obj.filter += OnFilter;
+            obj.filter += OnFilter1;
+            obj.filter += OnFilter2;
             //obj.deligated1 += OnCallBack2;
             //obj.deligated2 += OnCallBack3;
             //obj.deligated2 -= OnCallBack3;
@@ -26,9 +27,15 @@ namespace Deligate
             obj.reverseOrderInvocation();
         }
         //The OnCallBack is the method to becalled when call back occures
-        static bool OnFilter(int i)
+        static bool OnFilter1(int i)
         {
+            Console.WriteLine("OnFilter1");
             return i > 5 ? true : false;
+        }
+        static bool OnFilter2(int i)
+        {
+            Console.WriteLine("OnFilter2");
+            return i < 3 ? true : false;
         }
         //The OnCallBack is the method to becalled when call back occures
         static void OnCallBack2(int i)
@@ -50,19 +57,6 @@ namespace Deligate
         public CallBack1 filter; //public bool filter(int i)
         public CallBack2 deligated2;
 
-
-
-        //add deligation option 1
-        public void addDeligation(CallBack1 obj)
-        {
-            filter += obj;
-            
-        }
-        public void removeDeligation(CallBack1 obj)
-        {
-            filter -= obj;
-
-        }
         public void printDeligations()
         {
             Console.WriteLine("Invocation list has {0} methods.",
@@ -73,7 +67,7 @@ namespace Deligate
             for (int ctr = filter.GetInvocationList().Length - 1; ctr >= 0; ctr--)
             {
                 var outputMsg = filter.GetInvocationList()[ctr];
-                outputMsg.DynamicInvoke(1);
+                outputMsg.DynamicInvoke();
             }
         }
         //add deligation option 2
@@ -81,12 +75,10 @@ namespace Deligate
         public void LongRunning()
         {
             for (int i = 0; i < 10; i++)
-            {   
+            {
                 if(filter(i) == true)
                     Console.WriteLine($"Filter for index {i} is true");
 
-                if(deligated2 != null)
-                    deligated2(i, 5);
             }
         }
     }
