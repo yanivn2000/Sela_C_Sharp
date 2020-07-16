@@ -19,8 +19,8 @@ namespace LinkedListGeneric
             //Console.WriteLine("Print backward:");
             //linkedList.printAllNodesBackward();
 
-            Node <string> node = linkedList.RemoveFirstNode();
-            Console.WriteLine($"First node removed {node.data}");
+            //Node <string> node = linkedList.RemoveFirstNode();
+            //Console.WriteLine($"First node removed {node.data}");
 
             Console.WriteLine("Print forward:");
             linkedList.printAllNodes();
@@ -37,6 +37,13 @@ namespace LinkedListGeneric
             Console.WriteLine("Print backward:");
             linkedListLast.printAllNodesBackward();
 
+
+            Console.WriteLine("Get all values using the method Next");
+            string value;
+            while(linkedList.Next(out value))
+            {
+                Console.WriteLine($"Value: {value}");
+            }
         }
     }
 }

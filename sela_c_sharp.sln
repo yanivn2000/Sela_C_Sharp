@@ -153,6 +153,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListGeneric", "Linked
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Variables.csproj", "{2525CF90-2666-4178-BCA2-B085D2127AEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Props", "Props\Props.csproj", "{1A936539-9700-467D-83BF-00ABE0262453}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -463,5 +465,9 @@ Global
 		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Debug|anycpu.Build.0 = Debug|anycpu
 		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Release|anycpu.ActiveCfg = Release|anycpu
 		{2525CF90-2666-4178-BCA2-B085D2127AEC}.Release|anycpu.Build.0 = Release|anycpu
+		{1A936539-9700-467D-83BF-00ABE0262453}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{1A936539-9700-467D-83BF-00ABE0262453}.Debug|anycpu.Build.0 = Debug|anycpu
+		{1A936539-9700-467D-83BF-00ABE0262453}.Release|anycpu.ActiveCfg = Release|anycpu
+		{1A936539-9700-467D-83BF-00ABE0262453}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

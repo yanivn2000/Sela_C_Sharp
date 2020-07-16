@@ -9,9 +9,13 @@ namespace NamedAndOptionalParameters
             // The method can be called in the normal way, by using positional arguments.
             PrintOrderDetails("Gift Shop", 31, "Red Mug");
 
+
             // Named arguments can be supplied for the parameters in any order.
             PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop");
-            PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
+            PrintOrderDetails(
+                productName: "Red Mug",
+                sellerName: "Gift Shop",
+                orderNum: 31);
 
             // Named arguments mixed with positional arguments are valid
             // as long as they are used in their correct position.

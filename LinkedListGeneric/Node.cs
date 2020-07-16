@@ -11,6 +11,9 @@ namespace LinkedListGeneric
         {
             data = value;
         }
-
+        public override string ToString()
+        {
+            return data.ToString();
+        }
     }
 }
