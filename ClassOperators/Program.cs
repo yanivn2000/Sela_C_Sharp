@@ -22,7 +22,7 @@ namespace ClassOperators
             if (Point1 != Point2)//not eq
                 Console.WriteLine("Point1 != Point2");
             else
-                Console.WriteLine("Point1 == Point2");
+                Console.WriteLine("Point1 == Point2 - YOU HAVE A BUG");
 
             //Point != Point
             if (Point1 == Point4)//eq
@@ -35,6 +35,13 @@ namespace ClassOperators
             //Point * Point
             Point Point5 = new Point(3,4);
             Point5 = Point1 + Point2;
+
+            if(Point1.Equals(Point3))
+                Console.WriteLine("Point1 Equals Point3");
+
+            if(Point1 == Point2)
+                Console.WriteLine("Point1 Equals Point2");
+
 
             Distance distance1 = new Distance(90);
             //Point + Distance
@@ -76,10 +83,19 @@ namespace ClassOperators
             x = x1;
             y = y1;
         }
+
         public override string ToString()
         {
             return $"x:{x}, y:{y}";
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Point point &&
+                   x == point.x &&
+                   y == point.y;
+        }
+
         public static Point operator +(Point lvalue, int rvalue)
         {
             return new Point(lvalue.x + rvalue, lvalue.y + rvalue);

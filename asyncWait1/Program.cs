@@ -23,7 +23,9 @@ namespace asyncWait1
             //In this example, we are going to take two methods, which are not dependent on each other.
             Method1();
             Method2();
-            Console.ReadKey();
+            //Console.ReadKey();
+
+            Run();
         }
 
         public static async Task Method1()
@@ -37,6 +39,28 @@ namespace asyncWait1
             });
         }
 
+        async static void Run()
+        {
+            Task<int>[] array = new Task<int>[10];
+            for (int i = 0; i < 10; i++)
+            {
+                array[i] = Process(i);
+            }
+            int[] values = await Task.WhenAll(array);
+
+            foreach (var item in values)
+            {
+                Console.WriteLine($"Value: {item}");
+            }
+        }
+        async static Task<int> Process(int test)
+        {
+            await Task.Run(() =>
+            {
+                test+=5;
+            });
+            return test;
+        }
 
         public static void Method2()
         {

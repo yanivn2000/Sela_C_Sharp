@@ -11,12 +11,8 @@ namespace Params
             PrintArray("Send Array", array);
 
 
-            Test test = new Test(1, 4, 6, 7);
-            //test.PrintArray();
-            test.Name = 30;//assigment FAILED
-
-            Console.WriteLine($"The height is {test.Name}");
-
+            Test test1 = new Test(array);
+            Test test2 = new Test(1, 4, 6, 7);
 
         }
         public static void PrintArray(string str, params int [] array)
@@ -40,33 +36,33 @@ namespace Params
     class Test
     {
         static int max = 100;
-        public bool[] arrayOfBools { get ; private set; } = new bool[max];
-
-        private int name; // field
-        public int Name   // property
-        {
-            get { return name; }
-            set { name = value+10; }
-        }
+        public bool[] arrayOfBools { get; set; }
 
         public Test()
         {
-            name = 100;
+            arrayOfBools = new bool[max];
             for (int i = 0; i < max; i++)
             {
                 arrayOfBools[i] = false;
             }
         }
-        public Test(params int[] array) : base()
+        public Test(params int[] array) : this()
         {
             foreach (var item in array)
             {
                 arrayOfBools[item] = true;
             }
         }
-        public void PrintArray()
+        public Test(params long[] array) : this()
         {
-            foreach (var item in arrayOfBools)
+            foreach (var item in array)
+            {
+                arrayOfBools[item] = true;
+            }
+        }
+        public static void PrintArrayOnly(params int[] array)
+        {
+            foreach (var item in array)
             {
                 Console.WriteLine($"item: {item}");
             }
