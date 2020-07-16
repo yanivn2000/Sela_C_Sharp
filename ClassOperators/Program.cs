@@ -33,13 +33,13 @@ namespace ClassOperators
             string str = "Price is " + 4;
 
             //Point * Point
-            Point Point5 = new Point(3,4);
+            Point Point5 = new Point(3, 4);
             Point5 = Point1 + Point2;
 
-            if(Point1.Equals(Point3))
+            if (Point1.Equals(Point3))
                 Console.WriteLine("Point1 Equals Point3");
 
-            if(Point1 == Point2)
+            if (Point1 == Point2)
                 Console.WriteLine("Point1 Equals Point2");
 
 
@@ -72,70 +72,70 @@ namespace ClassOperators
                 */
         }
 
+
+        private class Point
+        {
+            public int x { get; set; }
+            public int y { get; set; }
+
+            public Point(int x1, int y1)
+            {
+                x = x1;
+                y = y1;
+            }
+
+            public override string ToString()
+            {
+                return $"x:{x}, y:{y}";
+            }
+
+            public override bool Equals(object obj)
+            {
+                return obj is Point point &&
+                       x == point.x &&
+                       y == point.y;
+            }
+
+            public static Point operator +(Point lvalue, int rvalue)
+            {
+                return new Point(lvalue.x + rvalue, lvalue.y + rvalue);
+            }
+            public static Point operator +(Point lvalue, Distance rvalue)
+            {
+                return new Point(lvalue.x + rvalue.d, lvalue.y + rvalue.d);
+            }
+            public static Point operator +(Distance rvalue, Point lvalue)
+            {
+                return new Point(lvalue.x + rvalue.d, lvalue.y + rvalue.d);
+            }
+            public static Point operator +(Point lvalue, Point rvalue)
+            {
+                return new Point(lvalue.x + rvalue.x, lvalue.y + rvalue.y);
+            }
+            public static Point operator -(Point lvalue, Point rvalue)
+            {
+                return new Point(lvalue.x - rvalue.x, lvalue.y - rvalue.y);
+            }
+            public static Point operator *(Point lvalue, Point rvalue)
+            {
+                return new Point(lvalue.x * rvalue.x, lvalue.y * rvalue.y);
+            }
+            public static bool operator ==(Point lvalue, Point rvalue)
+            {
+                if (lvalue.x == rvalue.x && lvalue.y == rvalue.y)
+                    return true;
+                else
+                    return false;
+            }
+            public static bool operator !=(Point lvalue, Point rvalue)
+            {
+                if (lvalue.x != rvalue.x || lvalue.y != rvalue.y)
+                    return true;
+                else
+                    return false;
+            }
+        }
     }
-    class Point
-    {
-        public int x { get; set; }
-        public int y { get; set; }
-
-        public Point(int x1, int y1)
-        {
-            x = x1;
-            y = y1;
-        }
-
-        public override string ToString()
-        {
-            return $"x:{x}, y:{y}";
-        }
-
-        public override bool Equals(object obj)
-        {
-            return obj is Point point &&
-                   x == point.x &&
-                   y == point.y;
-        }
-
-        public static Point operator +(Point lvalue, int rvalue)
-        {
-            return new Point(lvalue.x + rvalue, lvalue.y + rvalue);
-        }
-        public static Point operator +(Point lvalue, Distance rvalue)
-        {
-            return new Point(lvalue.x + rvalue.d, lvalue.y + rvalue.d);
-        }
-        public static Point operator +(Distance rvalue, Point lvalue)
-        {
-            return new Point(lvalue.x + rvalue.d, lvalue.y + rvalue.d);
-        }
-        public static Point operator +(Point lvalue, Point rvalue)
-        {
-            return new Point(lvalue.x + rvalue.x, lvalue.y + rvalue.y);
-        }
-        public static Point operator -(Point lvalue, Point rvalue)
-        {
-            return new Point(lvalue.x - rvalue.x, lvalue.y - rvalue.y);
-        }
-        public static Point operator *(Point lvalue, Point rvalue)
-        {
-            return new Point(lvalue.x * rvalue.x, lvalue.y * rvalue.y);
-        }
-        public static bool operator ==(Point lvalue, Point rvalue)
-        {
-            if (lvalue.x == rvalue.x && lvalue.y == rvalue.y)
-                return true;
-            else
-                return false;
-        }
-        public static bool operator !=(Point lvalue, Point rvalue)
-        {
-            if (lvalue.x != rvalue.x || lvalue.y != rvalue.y)
-                return true;
-            else
-                return false;
-        }
-    }
-
     class Distance
     {
         public int d { get; set; }

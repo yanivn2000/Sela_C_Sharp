@@ -28,6 +28,7 @@ namespace asyncWait1
             Run();
         }
 
+        //Executes loop of 1000 in a Task
         public static async Task Method1()
         {
             await Task.Run(() =>
@@ -37,6 +38,14 @@ namespace asyncWait1
                     Console.WriteLine(" Method 1");
                 }
             });
+        }
+
+        public static void Method2()
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Console.WriteLine(" Method 2*************");
+            }
         }
 
         async static void Run()
@@ -62,12 +71,6 @@ namespace asyncWait1
             return test;
         }
 
-        public static void Method2()
-        {
-            for (int i = 0; i < 1000; i++)
-            {
-                Console.WriteLine(" Method 2*************");
-            }
-        }
+
     }
 }

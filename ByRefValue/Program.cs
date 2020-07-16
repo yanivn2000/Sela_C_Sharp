@@ -12,7 +12,6 @@ namespace ByRefValue
             int argument = 30;
             TestClass obj = new TestClass();
             Console.WriteLine($"argument value is {argument}");
-            Console.WriteLine($"add 20 by ref to argument");
 
             obj.Add20ByValue(argument);
             Console.WriteLine($"argument value is {argument}");
