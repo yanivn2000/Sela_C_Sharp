@@ -30,9 +30,11 @@ namespace ClassOperators
             else
                 Console.WriteLine("Point1 != Point4");
 
-            //Point * Point
-            Point Point5 = Point1 * Point2;//10,70
+            string str = "Price is " + 4;
 
+            //Point * Point
+            Point Point5 = new Point(3,4);
+            Point5 = Point1 + Point2;
 
             Distance distance1 = new Distance(90);
             //Point + Distance
