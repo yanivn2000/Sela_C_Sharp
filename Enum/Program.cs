@@ -47,8 +47,33 @@ namespace Enum
             // Monday, Wednesday, Saturday
 
             Random rand = new Random();
-            int num = rand.Next((int)Season.FIRST, (int)Season.LAST+1);
-            Console.WriteLine($"Random season: {(Season)num}");
+            Season season = (Season)(rand.Next((int)Season.FIRST, (int)Season.LAST+1));//0-3
+            switch (season)
+            {
+                case Season.Autumn:
+                    {
+                        Console.WriteLine("Autume graphics");
+                        break;
+                    }
+                case Season.Spring:
+                    {
+                        Console.WriteLine("Spring graphics");
+                        break;
+                    }
+                case Season.Summer:
+                    {
+                        Console.WriteLine("Summer graphics");
+                        break;
+                    }
+                case Season.Winter:
+                    {
+                        Console.WriteLine("Winter graphics");
+                        break;
+                    }
+            }
+
+
+            Console.WriteLine($"Random season: {season}");
             //More testing:
             Console.WriteLine($"Random season: {(Season)0}");
             Console.WriteLine($"Random season: {(Season)1}");
@@ -57,6 +82,12 @@ namespace Enum
             Console.WriteLine($"Random season: {Season.Autumn}");
 
         }
+    }
+
+    enum Status
+    {
+        OK,
+        CANCEL,
     }
     enum Season
     {

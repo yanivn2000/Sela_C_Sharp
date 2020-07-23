@@ -134,6 +134,7 @@ namespace ByRefValue
         {
             number = 44;
         }
+
     }
     class CS0663_Example
     {

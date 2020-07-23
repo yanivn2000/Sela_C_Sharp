@@ -155,6 +155,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "Variables\Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Props", "Props\Props.csproj", "{1A936539-9700-467D-83BF-00ABE0262453}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueBracketChecker", "QueueBracketChecker\QueueBracketChecker.csproj", "{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -469,5 +471,9 @@ Global
 		{1A936539-9700-467D-83BF-00ABE0262453}.Debug|anycpu.Build.0 = Debug|anycpu
 		{1A936539-9700-467D-83BF-00ABE0262453}.Release|anycpu.ActiveCfg = Release|anycpu
 		{1A936539-9700-467D-83BF-00ABE0262453}.Release|anycpu.Build.0 = Release|anycpu
+		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
