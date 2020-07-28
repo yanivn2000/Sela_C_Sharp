@@ -48,6 +48,8 @@ namespace Enum
 
             Random rand = new Random();
             Season season = (Season)(rand.Next((int)Season.FIRST, (int)Season.LAST+1));//0-3
+
+
             switch (season)
             {
                 case Season.Autumn:
@@ -72,7 +74,6 @@ namespace Enum
                     }
             }
 
-
             Console.WriteLine($"Random season: {season}");
             //More testing:
             Console.WriteLine($"Random season: {(Season)0}");
@@ -81,6 +82,8 @@ namespace Enum
             Console.WriteLine($"Random season: {(Season)3}");
             Console.WriteLine($"Random season: {Season.Autumn}");
 
+            Console.WriteLine($"Error {ErrorCode.ConnectionLost}");
+            Console.WriteLine($"Error 404");
         }
     }
 
@@ -103,7 +106,8 @@ namespace Enum
         None = 0,
         Unknown = 1,
         ConnectionLost = 100,
-        OutlierReading = 200
+        OutlierReading = 200,
+        CONNECTION_REFUSE = 404
     }
     //bit
     public enum Days

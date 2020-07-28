@@ -8,24 +8,45 @@ namespace Polymorphism
     {
         public static void Main(string[] args)
         {
-            Animal animal1 = new German_Shepherd(uterine_months: 5, max_age: 13, number_of_legs: 4, weight: 40, height: 30);
-            Animal animal2 = new Tigris(uterine_months: 5, max_age: 13, number_of_legs: 4, weight: 40, height: 30);
+            while (true)
+            {
+                Console.Write($"Please enter animal type that you want to create (0,1...or {AnimalsTypes.NONE} to quit): ");
+                AnimalsTypes animalType = (AnimalsTypes)int.Parse(Console.ReadLine());
+                if (AnimalsTypes.NONE == animalType) break;
 
-            Console.WriteLine("Animal1 sleep 10:");
-            animal1.Sleep(10);
-            Console.WriteLine("Animal2 sleep 20:");
-            animal2.Sleep(20);
-            Console.WriteLine("Animal1 move 2 right and 5 up");
-            animal1.Move(2,5);
-            Console.WriteLine("Animal2 move 3 right and 8 up");
-            animal2.Move(3,8);
-
-            PrintAnimal(animal1);
+                Animal animal = AnimalFactory(animalType);
+                StartWorking(animal);
+            }
         }
 
-        public static void PrintAnimal(Animal animal)
+        public static void StartWorking(Animal animal)
         {
+            Console.WriteLine("Animal1 sleep 10:");
+            animal.Sleep(10);
+            Console.WriteLine("Animal1 move 2 right and 5 up");
+            animal.Move(2, 5);
 
+        }
+
+        public static Animal AnimalFactory(AnimalsTypes animalsTypes)
+        {
+            switch (animalsTypes)
+            {
+                case AnimalsTypes.Tigris:
+                    {
+                        return new Tigris(uterine_months: 5, max_age: 13, number_of_legs: 4, weight: 40, height: 30);
+                    }
+                case AnimalsTypes.GermanShepherd:
+                    {
+                        return new German_Shepherd(uterine_months: 5, max_age: 13, number_of_legs: 4, weight: 40, height: 30);
+                    }
+            }
+            return null;
+        }
+        public enum AnimalsTypes{
+            Tigris,
+            GermanShepherd,
+            NONE = 100
         }
     }
 
@@ -77,7 +98,8 @@ namespace Polymorphism
     }
     class German_Shepherd : Dog
     {
-        public German_Shepherd(int uterine_months, int max_age, int number_of_legs, int weight, int height) : base(uterine_months, max_age, number_of_legs, weight, height)
+        public German_Shepherd(int uterine_months, int max_age, int number_of_legs, int weight, int height) :
+            base(uterine_months, max_age, number_of_legs, weight, height)
         {
         }
         public override void Move(int x, int y)

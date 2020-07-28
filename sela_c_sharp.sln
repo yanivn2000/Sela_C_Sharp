@@ -157,6 +157,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Props", "Props\Props.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueBracketChecker", "QueueBracketChecker\QueueBracketChecker.csproj", "{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerialize", "XmlSerialize\XmlSerialize.csproj", "{4C1FC015-37DB-454E-BA37-4AFE406BB2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTree", "BTree\BTree.csproj", "{60296AF7-146F-4F40-85C2-5C0BF466C892}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -475,5 +479,13 @@ Global
 		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Release|anycpu.ActiveCfg = Release|anycpu
 		{B656B8C8-91AC-45EA-8A2C-908C4F58F3BA}.Release|anycpu.Build.0 = Release|anycpu
+		{4C1FC015-37DB-454E-BA37-4AFE406BB2E9}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{4C1FC015-37DB-454E-BA37-4AFE406BB2E9}.Debug|anycpu.Build.0 = Debug|anycpu
+		{4C1FC015-37DB-454E-BA37-4AFE406BB2E9}.Release|anycpu.ActiveCfg = Release|anycpu
+		{4C1FC015-37DB-454E-BA37-4AFE406BB2E9}.Release|anycpu.Build.0 = Release|anycpu
+		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Debug|anycpu.Build.0 = Debug|anycpu
+		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Release|anycpu.ActiveCfg = Release|anycpu
+		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

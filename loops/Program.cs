@@ -4,7 +4,34 @@ namespace conditions
 {
     class MainClass
     {
+
         public static void Main(string[] args)
+        {
+            int sum = 0;
+            int count = 0;
+            Console.WriteLine("Please enter 10 numbers: ");
+            do
+            {
+                Console.Write($"Please enter number #{count}: ");
+                string str = Console.ReadLine();
+                int value;
+                if (int.TryParse(str, out value))
+                {
+                    sum += value;
+                    count++;
+                }
+                else
+                {
+                    Console.WriteLine("This was a wrong number");
+                }
+            } while (count != 10);
+
+            Console.WriteLine($"The sum of all values is {sum}");
+        }
+
+
+
+        public static void Main7(string[] args)
         {
             int number = 10;
             while (number > 0)
