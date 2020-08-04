@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerialize", "XmlSerializ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTree", "BTree\BTree.csproj", "{60296AF7-146F-4F40-85C2-5C0BF466C892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -487,5 +489,9 @@ Global
 		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Debug|anycpu.Build.0 = Debug|anycpu
 		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Release|anycpu.ActiveCfg = Release|anycpu
 		{60296AF7-146F-4F40-85C2-5C0BF466C892}.Release|anycpu.Build.0 = Release|anycpu
+		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

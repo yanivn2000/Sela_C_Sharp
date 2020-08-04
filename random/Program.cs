@@ -7,7 +7,6 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-
             Console.WriteLine("This is Main");
             //MainRandom1(args);
             //MainRandom2(args);
@@ -16,6 +15,17 @@ namespace ConsoleApp1
             Console.ReadKey();
 
         }
+        /*
+        static public int Min(int number1, int number2)
+        {
+            if (number1 > number2) return number2;
+            else return number2;
+        }
+        static public int Max(int number1, int number2)
+        {
+            if (number1 < number2) return number2;
+            else return number2;
+        }*/
         static void MainRandom4(string[] args)
         {
             int TOTAL_DRAWS = 10;
@@ -40,7 +50,7 @@ namespace ConsoleApp1
                 {
                     //rand.NextDouble() draw real number between 0-1
                     //realNumber: 40.000001 - 99.9999999999
-                    double realNumber = (max - min) * rand.NextDouble() + min;
+                    double realNumber = (max - min) * rand.NextDouble() + min;//(50 - 20) * 0.24 + 20
                     if (realNumber < minimalValue)
                         minimalValue = realNumber;//found a new minimal value (beside min)
                     //add the real number to Sum
@@ -188,5 +198,6 @@ namespace ConsoleApp1
             Console.WriteLine();
             Console.WriteLine($"Biggest Number Digits is {biggestNumber}({biggestNumberSumDigits}), and second is {secondBiggestNumber}({secondBiggestNumberSumDigits})");
         }
+
     }
 }

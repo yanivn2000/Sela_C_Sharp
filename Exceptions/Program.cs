@@ -70,6 +70,10 @@ namespace Exceptions
                     Console.WriteLine("Index was out of range");
                     Console.WriteLine(e.Message);
                 }
+                finally //ALWAYS do something - it does not catch the exception, but just perform some final things
+                {
+                    Console.WriteLine("Finaly");
+                }
             }
 
             //The method cannot complete its defined functionality.
@@ -132,9 +136,9 @@ namespace Exceptions
             try
             {
                 Console.WriteLine("Do something wrong");
-                throw new illegalCardException("This is a user defined exception");
+                throw new MyException("This is a user defined exception");
             }
-            catch (illegalCardException e)
+            catch (MyException e)
             {
                 Console.WriteLine($"EmployeeListNotFoundException: {e.Message}");
             }
@@ -165,22 +169,22 @@ namespace Exceptions
     //user-defined exception
     //When creating your own exceptions, end the class name of the user-defined exception with the word "Exception",
     //and implement the three common constructors, as shown in the following example.
-    public class illegalCardException : Exception
+    public class MyException : Exception
     {
-        public illegalCardException()
+        public MyException()
             : base("this is an empty exception")
         {
         }
 
-        public illegalCardException(string message, int num_of_tries)
+        public MyException(string message, int num_of_tries)
             : base(message + $"Card deck: {num_of_tries}")
         {
         }
-        public illegalCardException(string message)
+        public MyException(string message)
             : base(message)
         {
         }
-        public illegalCardException(string message, Exception inner)
+        public MyException(string message, Exception inner)
             : base(message, inner)
         {
         }

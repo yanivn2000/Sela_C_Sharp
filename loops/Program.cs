@@ -4,19 +4,61 @@ namespace conditions
 {
     class MainClass
     {
-
+        //6.	לקלוט 20 מספרים בלולאה ולמצוא מספר בעלי סכום הספרות המקסימלי ומינימלי ולהציג גם את המספר וגם את סכום הספרות שלו –גם עבור המקסימום וגם עבור המינימום
         public static void Main(string[] args)
+        {
+            int biggestDigitSum = int.MinValue, smallestDigitsSum = int.MaxValue, smallestNum = 0, biggestNum = 0;
+            Console.WriteLine("insert 5 valid numbers:");            for (int i = 0; i < 5; i++)
+            {
+                int currentDigitSum = 0, num = 0;
+                Console.Write("Please enter a number: ");                string str = Console.ReadLine();//read input from the user                while (!int.TryParse(str, out num))//loop until the input is an integer                {
+                    Console.WriteLine("wrong input");
+                }
+
+                //Yea - I have a number
+                int currentNum = num;//save the number before we manipulate it
+                while (num != 0)
+                {
+                    currentDigitSum += (num % 10);//if we had 7654 % 10 //get the digit and add it to compet
+                    num /= 10;//div by 10 (7654 --> 765)
+                }
+                //if the biggest
+                if (currentDigitSum > biggestDigitSum)
+                {
+                    biggestDigitSum = currentDigitSum;//keep the biggest digits sum (22)
+                    biggestNum = currentNum;//keep the number with the biggest digits sum (7654)
+                }
+                if (currentDigitSum < smallestDigitsSum)
+                {
+                    smallestDigitsSum = currentDigitSum;//keep the smallest digits sum (22)
+                    smallestNum = currentNum;//keep the number with the smallest digits sum (7654)
+                }
+            }
+            Console.WriteLine($"biggest num is {biggestNum} and digits value is {biggestDigitSum} smallest num is {smallestNum} and digits value is{smallestDigitsSum}");
+        }
+        //read 5 numbers and check if the least significant digits (LSD) equals to the most significant digit (NSD)
+        public static void Main44(string[] args)
+        {
+
+            int equalNum = 0;            int cnt = 0, unit, num;            int maxDigit = 0;            Console.WriteLine("please enter five numbers");            while (cnt < 5)            {                while (!int.TryParse(Console.ReadLine(), out num))                {                    Console.WriteLine("invalid imput");
+                }                unit = num % 10;                while (num != 0)                {                    maxDigit = num;                    num /= 10;                }                if (unit == maxDigit)                {                    equalNum++;                }                cnt++;
+
+            }            Console.WriteLine($"the numbers of the num that the equal from both side {equalNum}"); 
+        }
+        //read 10 whola numbers using do while
+        public static void Main33(string[] args)
         {
             int sum = 0;
             int count = 0;
             Console.WriteLine("Please enter 10 numbers: ");
             do
             {
-                Console.Write($"Please enter number #{count}: ");
+                Console.Write($"Please enter number #{count+1}: ");
                 string str = Console.ReadLine();
                 int value;
                 if (int.TryParse(str, out value))
                 {
+                    //here we for sure have a number
                     sum += value;
                     count++;
                 }
@@ -29,7 +71,13 @@ namespace conditions
             Console.WriteLine($"The sum of all values is {sum}");
         }
 
-
+        //read 10 whola numbers using for and while
+        public static void Main22(string[] args)
+        {
+            int sum = 0;
+            for (int cnt = 0; cnt < 5; cnt++)
+            {                Console.Write("Enter a number: ");                int num;                while (!int.TryParse(Console.ReadLine(), out num))                {                    Console.WriteLine("Unvalid number, please try again!");                }                //Logic:                sum += num;            }            Console.WriteLine($"The sum of all values is {sum}");
+        }
 
         public static void Main7(string[] args)
         {
