@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Playground
+namespace w3resourceExercisesLoop
 {
     class MainClass
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Today
 {
@@ -7,8 +8,7 @@ namespace Today
 
         static void Main(string[] args)
         {
-
-            Exc11(args);
+            //Exc11(args);
             //Exc12(args);
             //Exc13(args);
             //Exc14(args);
@@ -16,6 +16,38 @@ namespace Today
             Console.ReadKey();
         }
 
+        static void forEach()
+        {
+            int[] arr1 = { 1, 4, 5, 2, 3, 7, 1 };
+            int[] arr2 = { 3, 3, 6, 2, 2, 7, 1 };
+            int[] arrCommon = new int[100];
+
+            int indexCommon = 0;
+            foreach (var item1 in arr1)
+            {
+                foreach (var item2 in arr2)
+        }
+        static void Fibonaci()
+        {            
+            int[] arrys1 = new int[30];            arrys1[0] = 0;            arrys1[1] = 1;            //build            for (int i = 2; i < arrys1.Length; i++)            {                arrys1[i] = arrys1[i - 2] + arrys1[i - 1];            }            //print            for (int i = arrys1.Length - 1; i > 0; i--)            {                Console.Write($"{arrys1[i]}  ");            }
+
+        }
+        static void Main88()
+        {
+            int[] a = new int[50];            int[] ab = new int[50];            Random r = new Random();
+            int count = 0;
+            for (int i = 0; i < 50; i++)            {                a[i] = r.Next(100);                ab[i] = r.Next(100);            }            for (int i = 0; i < 50; i++)
+            {
+                for (int j = 0; j < 50; j++)
+                {
+                    if(a[i] == ab[j])
+                    {
+                        count++;
+                        //break;
+                    }
+                }
+            }            Console.WriteLine($"We have found {count} identical items on both arrays");            /*            for (int i = 0; i < a.Length; i++)            {                if (ab.Contains(a[i]))                {                    Console.WriteLine(a[i]);                }            }*/
+        }
         //•	לבנות מערך בגודל 100 של מספרים אקראים בטווח של 1-20, לקלוט מספר בין 1-20 מהמשתמש ולספור כמה פעמים המספר נמצא במערך
         static void Exc11(string[] args)
         {
@@ -114,11 +146,8 @@ namespace Today
             for (int i = 0, j = str.Length - 1; i < j && isPolyndrom; i++, j--)
             {
                 if (str[i] != str[j])
-                {
                     isPolyndrom = false;
-                }
-            }
-
+            }                                                                                                                                                                   
 
             if (isPolyndrom)
                 Console.WriteLine($"String {str} is Polyndrom");

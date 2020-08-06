@@ -161,7 +161,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlSerialize", "XmlSerializ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTree", "BTree\BTree.csproj", "{60296AF7-146F-4F40-85C2-5C0BF466C892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w3resource-exercises-loop", "Playground\w3resource-exercises-loop.csproj", "{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w3resourceExercisesArray", "w3resourceExercisesArray\w3resourceExercisesArray.csproj", "{3E3DD624-E7EE-4100-B105-D36556CAED60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -493,5 +495,9 @@ Global
 		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Debug|anycpu.Build.0 = Debug|anycpu
 		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Release|anycpu.ActiveCfg = Release|anycpu
 		{85B2303A-AA6F-4BDB-A50C-73B141D7B31F}.Release|anycpu.Build.0 = Release|anycpu
+		{3E3DD624-E7EE-4100-B105-D36556CAED60}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{3E3DD624-E7EE-4100-B105-D36556CAED60}.Debug|anycpu.Build.0 = Debug|anycpu
+		{3E3DD624-E7EE-4100-B105-D36556CAED60}.Release|anycpu.ActiveCfg = Release|anycpu
+		{3E3DD624-E7EE-4100-B105-D36556CAED60}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

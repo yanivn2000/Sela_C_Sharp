@@ -5,7 +5,36 @@ namespace PrimeNumbers
     class MainClass
     {
 
-        public static void Main(string[] args)
+
+        public static void Main()
+        {
+            int[] arrPrimeNumbers = new int[10];
+            Random rand = new Random();
+            int primeIndex = 0;
+            while(primeIndex < arrPrimeNumbers.Length)
+            {
+                //draw a number
+                int number = rand.Next(100, 1001);
+                //check if prime
+                bool isDiveded = false;
+                for (int i = 2; (i <= (int)Math.Sqrt(number)) && !isDiveded; i++)
+                {
+                    if((number % i) == 0)
+                        isDiveded = true;
+                }
+                //if prime + //add to array + //add indexPrime+1
+                if (!isDiveded)
+                    arrPrimeNumbers[primeIndex++] = number;
+            }
+
+            for (int i = 0; i < arrPrimeNumbers.Length; i++)
+            {
+                Console.WriteLine($"Prime number: {arrPrimeNumbers[i]}");
+            }
+
+        }
+
+        public static void IsPrimeWithFunctions()
         {
             int[] numbers = { 11, 17, 654, 989, 666, 123139 };
 
