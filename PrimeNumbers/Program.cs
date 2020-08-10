@@ -5,7 +5,6 @@ namespace PrimeNumbers
     class MainClass
     {
 
-
         public static void Main()
         {
             int[] arrPrimeNumbers = new int[10];
@@ -26,12 +25,15 @@ namespace PrimeNumbers
                 if (!isDiveded)
                     arrPrimeNumbers[primeIndex++] = number;
             }
+            PrintArray(arrPrimeNumbers);
+        }
 
-            for (int i = 0; i < arrPrimeNumbers.Length; i++)
+        public static void PrintArray(int []array)
+        {
+            foreach (int item in array)
             {
-                Console.WriteLine($"Prime number: {arrPrimeNumbers[i]}");
+                Console.WriteLine($"{item}");
             }
-
         }
 
         public static void IsPrimeWithFunctions()

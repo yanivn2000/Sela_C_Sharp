@@ -8,6 +8,7 @@ namespace Today
 
         static void Main(string[] args)
         {
+            forEach();
             //Exc11(args);
             //Exc12(args);
             //Exc13(args);
@@ -18,14 +19,30 @@ namespace Today
 
         static void forEach()
         {
-            int[] arr1 = { 1, 4, 5, 2, 3, 7, 1 };
-            int[] arr2 = { 3, 3, 6, 2, 2, 7, 1 };
-            int[] arrCommon = new int[100];
 
-            int indexCommon = 0;
-            foreach (var item1 in arr1)
+
+            string name = "Yaniv Nuriel";
+
+            foreach (var item in name)
             {
-                foreach (var item2 in arr2)
+                Console.WriteLine($"{item}");
+            }
+            int[] arr1 = { 1, 4, 5, 2, 3, 7, 1 };
+            foreach (int number in arr1)
+                Console.WriteLine($"{number}");
+
+            Console.WriteLine("Array start pow .....");
+
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                arr1[i] = arr1[i] * arr1[i];
+            }
+            Console.WriteLine("Array end pow .....");
+
+            Console.WriteLine("Array after pow");
+            foreach (int number in arr1)
+                Console.WriteLine($"{number}");
+
         }
         static void Fibonaci()
         {            
