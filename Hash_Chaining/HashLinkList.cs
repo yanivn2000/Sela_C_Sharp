@@ -59,21 +59,22 @@ namespace Hash_Chaining
 
         public void Add(TKey key, TValue value) //O(1)
         {
+            //generate the index for the key
             int ind = CalcHashCode(key);
-
+            //check if the ind is not null
             if (arr[ind] == null)
             {
                 arr[ind] = new LinkedList<Data>(); //this is a first item for this ind
             }
             else
             {
-                if (arr[ind].Any(d => d.key.Equals(key)))
+                if (arr[ind].Any(d => d.key.Equals(key))) //try to add the same key! WRONG!
                 {
                     throw new ArgumentException($"An item with the same key has already been added. Key: {key}");
                 }
             }
 
-            arr[ind].AddLast(new Data(key, value));
+            arr[ind].AddLast(new Data(key, value));//add to last in this ind
             items++;
 
             if (items > maxItems)
@@ -81,6 +82,11 @@ namespace Hash_Chaining
                 ReHash();//to do - add implemintation
             }
         }
+
+        public bool Edit(TKey key, TValue value)
+        {            int ind = CalcHashCode(key);            if (arr[ind] != null)            {                foreach (var item in arr[ind])                {                    if (item.key.Equals(key))                    {                        item.val = value;                        return true;                    }                }            }            return false;        } 
+        public bool Delete(TKey key)
+        {            int ind = CalcHashCode(key);            if (arr[ind] != null)            {                arr[ind].Remove(new Data(key, default));            }            return false;        }
 
         private void ReHash() //O(n)
         {
@@ -115,6 +121,12 @@ namespace Hash_Chaining
             {
                 this.key = key;
                 this.val = val;
+            }
+
+            public override bool Equals(object obj)
+            {
+                return obj is Data data &&
+                       EqualityComparer<TKey>.Default.Equals(key, data.key);
             }
         }
     }

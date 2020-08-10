@@ -31,6 +31,11 @@ namespace Hash_Chaining
                 Console.WriteLine($"{e.Message}");
             }
 
+            hashCars.Delete(6554736);
+
+            hashCars.Add(5556644, 1988);
+            hashCars.Edit(5556644, 2020);
+
             //
             Console.WriteLine();
         }
