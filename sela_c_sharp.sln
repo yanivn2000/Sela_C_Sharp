@@ -171,6 +171,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash_DoubleHashing", "Hash_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash_SeparateChaining", "Hash_SeparateChaining\Hash_SeparateChaining.csproj", "{483390D3-1B93-4097-AB13-A41723207A08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash_Chaining", "Hash_Chaining\Hash_Chaining.csproj", "{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -517,5 +519,9 @@ Global
 		{483390D3-1B93-4097-AB13-A41723207A08}.Debug|anycpu.Build.0 = Debug|anycpu
 		{483390D3-1B93-4097-AB13-A41723207A08}.Release|anycpu.ActiveCfg = Release|anycpu
 		{483390D3-1B93-4097-AB13-A41723207A08}.Release|anycpu.Build.0 = Release|anycpu
+		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
