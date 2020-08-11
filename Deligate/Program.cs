@@ -6,50 +6,40 @@ namespace Deligate
     {
         public static void Main(string[] args)    
         {
-            Button btn = new Button();
-            btn.click += Login;
+            Form form = new Form();
+            /*4*/
+            form.submit += Login;
+            /*4*/
+            form.submit += Navigate;
 
-            btn.Load();
+            form.OnSubmit();
 
-            //reverse invocation
-            //obj.addDeligation(OnCallBack1);
-            //Console.WriteLine("Print in reverse order:");
-            //obj.reverseOrderInvocation();
         }
         //The OnCallBack is the method to becalled when call back occures
         static void Login(string user_name)
         {
             Console.WriteLine($"Welcome {user_name}!");
         }
+        //The OnCallBack is the method to becalled when call back occures
+        static void Navigate(string user_name)
+        {
+            Console.WriteLine($"{user_name}, you are now on the dashboard!");
+        }
     }
 
-    class Button
+    class Form
     {
         //deligation declaration
-        public delegate void CallBack1(string u);
+        /*1*/ public delegate void Submit(string u);//Click is a type of deligate: void (string)
 
-        public CallBack1 click;
+        /*2*/ public Submit submit;
 
-        public void printDeligations()
-        {
-            Console.WriteLine("Invocation list has {0} methods.",
-                        click.GetInvocationList().Length);
-        }
-        public void reverseOrderInvocation()  
-        {
-            for (int ctr = click.GetInvocationList().Length - 1; ctr >= 0; ctr--)
-            {
-                var outputMsg = click.GetInvocationList()[ctr];
-                outputMsg.DynamicInvoke();
-            }
-        }
-        //add deligation option 2
-        //method that gets a deligation
-        public void Load()
+        //The method that will execute the submit
+        /*3*/public void OnSubmit()
         {
             Console.Write("Please enter you user: ");
             string user_name = Console.ReadLine();
-            click(user_name);
+            submit(user_name);
 
         }
     }
