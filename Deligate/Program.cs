@@ -6,80 +6,51 @@ namespace Deligate
     {
         public static void Main(string[] args)    
         {
-            SomeClass obj = new SomeClass();
-            obj.filter += OnFilter1;
-            obj.filter += OnFilter2;
-            //obj.deligated1 += OnCallBack2;
-            //obj.deligated2 += OnCallBack3;
-            //obj.deligated2 -= OnCallBack3;
-            //Call a method and pass the OnCallBack Method to call
-            //obj.addDeligation(OnCallBack1);
-            //obj.printDeligations();
-            //obj.addDeligation(OnCallBack2);
-            //obj.printDeligations();
-            //obj.removeDeligation(OnCallBack1);
-            //obj.printDeligations();   
-            obj.LongRunning();
+            Button btn = new Button();
+            btn.click += Login;
+
+            btn.Load();
 
             //reverse invocation
             //obj.addDeligation(OnCallBack1);
-            Console.WriteLine("Print in reverse order:");
-            obj.reverseOrderInvocation();
+            //Console.WriteLine("Print in reverse order:");
+            //obj.reverseOrderInvocation();
         }
         //The OnCallBack is the method to becalled when call back occures
-        static bool OnFilter1(int i)
+        static void Login(string user_name)
         {
-            Console.WriteLine("OnFilter1");
-            return i > 5 ? true : false;
-        }
-        static bool OnFilter2(int i)
-        {
-            Console.WriteLine("OnFilter2");
-            return i < 3 ? true : false;
-        }
-        //The OnCallBack is the method to becalled when call back occures
-        static void OnCallBack2(int i)
-        {
-            Console.WriteLine($"OnCallBack2: {i}");
-        }
-        static void OnCallBack3(int i, int j)
-        {
-            Console.WriteLine($"OnCallBack2: {i}, {j}");
+            Console.WriteLine($"Welcome {user_name}!");
         }
     }
 
-    class SomeClass
+    class Button
     {
         //deligation declaration
-        public delegate bool CallBack1(int i);
-        public delegate void CallBack2(int i, int j);
+        public delegate void CallBack1(string u);
 
-        public CallBack1 filter; //public bool filter(int i)
-        public CallBack2 deligated2;
+        public CallBack1 click;
 
         public void printDeligations()
         {
             Console.WriteLine("Invocation list has {0} methods.",
-                        filter.GetInvocationList().Length);
+                        click.GetInvocationList().Length);
         }
         public void reverseOrderInvocation()  
         {
-            for (int ctr = filter.GetInvocationList().Length - 1; ctr >= 0; ctr--)
+            for (int ctr = click.GetInvocationList().Length - 1; ctr >= 0; ctr--)
             {
-                var outputMsg = filter.GetInvocationList()[ctr];
+                var outputMsg = click.GetInvocationList()[ctr];
                 outputMsg.DynamicInvoke();
             }
         }
         //add deligation option 2
         //method that gets a deligation
-        public void LongRunning()
+        public void Load()
         {
-            for (int i = 0; i < 10; i++)
-            {
-                if(filter(i) == true)
-                    Console.WriteLine($"Filter for index {i} is true");
+            Console.Write("Please enter you user: ");
+            string user_name = Console.ReadLine();
+            click(user_name);
 
-            }
         }
     }
 }
