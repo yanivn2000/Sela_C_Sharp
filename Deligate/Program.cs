@@ -7,9 +7,9 @@ namespace Deligate
         public static void Main(string[] args)    
         {
             Form form = new Form();
-            /*4*/
+            /*4.1*/
             form.submit += Login;
-            /*4*/
+            /*4.1 (optional)*/
             form.submit += Navigate;
 
             form.OnSubmit();

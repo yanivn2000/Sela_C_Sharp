@@ -173,6 +173,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash_SeparateChaining", "Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash_Chaining", "Hash_Chaining\Hash_Chaining.csproj", "{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphD", "Graph\GraphD.csproj", "{4E5F53B7-B49D-4D67-825B-C3BE2CED7060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraPathAlgorithm", "DijkstraPathAlgorithm\DijkstraPathAlgorithm.csproj", "{37A1A75D-A127-46F3-A4CA-2BC21C43602E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -523,5 +527,13 @@ Global
 		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Debug|anycpu.Build.0 = Debug|anycpu
 		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Release|anycpu.ActiveCfg = Release|anycpu
 		{96D181EC-25F5-4FEC-8A8D-93150E51FD0A}.Release|anycpu.Build.0 = Release|anycpu
+		{4E5F53B7-B49D-4D67-825B-C3BE2CED7060}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{4E5F53B7-B49D-4D67-825B-C3BE2CED7060}.Debug|anycpu.Build.0 = Debug|anycpu
+		{4E5F53B7-B49D-4D67-825B-C3BE2CED7060}.Release|anycpu.ActiveCfg = Release|anycpu
+		{4E5F53B7-B49D-4D67-825B-C3BE2CED7060}.Release|anycpu.Build.0 = Release|anycpu
+		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Debug|anycpu.Build.0 = Debug|anycpu
+		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Release|anycpu.ActiveCfg = Release|anycpu
+		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
