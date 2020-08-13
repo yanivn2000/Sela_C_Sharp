@@ -30,17 +30,18 @@ namespace Deligate
     class Form
     {
         //deligation declaration
-        /*1*/ public delegate void Submit(string u);//Click is a type of deligate: void (string)
-
-        /*2*/ public Submit submit;
+        /*1*/
+        public delegate void Submit(string u);//Click is a type of deligate: void (string)
+        /*2*/
+        public Submit submit;
 
         //The method that will execute the submit
-        /*3*/public void OnSubmit()
+        /*3*/
+        public void OnSubmit()
         {
             Console.Write("Please enter you user: ");
             string user_name = Console.ReadLine();
             submit(user_name);
-
         }
     }
 }
