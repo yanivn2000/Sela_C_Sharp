@@ -9,18 +9,29 @@ namespace EventHandler1
         public event EventHandler ProcessCompleted;//Built-in EventHandler Delegate
         public event EventHandler<bool> ProcessCompletedBool;//Passing an Event Data
 
-        public void StartProcess()
+        public void ReadNumber()
         {
             Console.WriteLine("Process Started!");
+            Console.Write("Please enter a number: ");
+            int value;
+            if(int.TryParse(Console.ReadLine(), out value))
+            {
+                OnProcessCompleted(true); //No event data
+            }
+            else
+            {
+                OnProcessCompleted(false); //No event data
+            }
+
             // some code here..
-            OnProcessCompleted(EventArgs.Empty); //No event data
         }
 
-        protected virtual void OnProcessCompleted(EventArgs e)
+        protected virtual void OnProcessCompleted(bool result)
         {
-            information = "Completed";
-            ProcessCompleted?.Invoke(this, e);
-            ProcessCompletedBool?.Invoke(this,true);
+            //information = "Completed";
+            //EventArgs e = new EventArgs();
+            //ProcessCompleted?.Invoke(this, e);
+            ProcessCompletedBool?.Invoke(this,result);
         }
     }
 }

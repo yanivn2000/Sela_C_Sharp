@@ -7,9 +7,11 @@ namespace EventHandler1
         public static void Main()
         {
             ProcessBusinessLogic bl = new ProcessBusinessLogic();
-            bl.ProcessCompleted += bl_ProcessCompleted; // register with an event
+            //bl.ProcessCompleted += bl_ProcessCompleted; // register with an event
             bl.ProcessCompletedBool += bl_ProcessCompletedBool;
-            bl.StartProcess();
+
+            while(true)
+                bl.ReadNumber();
         }
 
         // event handler
@@ -21,8 +23,13 @@ namespace EventHandler1
         // event handler
         public static void bl_ProcessCompletedBool(object sender, bool isTrue)
         {
-            ProcessBusinessLogic pbl = sender as ProcessBusinessLogic;
-            Console.WriteLine(pbl.information);
+            if(isTrue)
+                Console.WriteLine("User entered a number");
+            else
+                Console.WriteLine("User entered a NONE number");
+
+            //ProcessBusinessLogic pbl = sender as ProcessBusinessLogic;
+            //Console.WriteLine(pbl.information);
         }
     }
 }

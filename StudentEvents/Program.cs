@@ -27,7 +27,7 @@ namespace StudentEvents
         public Manager()
         {
             //create student queue with limitation of 92 students and 70 grade (exceeded..)
-            studentQueue = new StudentQueue(70, 92);
+            studentQueue = new StudentQueue(90, 92);
             //Append 2 methods for LimitationExceed event
             studentQueue.LimitationExeeded += RemoveByGrade;
             studentQueue.LimitationExeeded += PrintCount;
@@ -36,7 +36,7 @@ namespace StudentEvents
         {
             //create random studets
             Random rand = new Random();
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 Student stud = new Student(rand.Next(100000, 200000), rand.Next(50, 100));
                 try
@@ -88,12 +88,12 @@ namespace StudentEvents
         //Remove all the studets that are below the limitation
         public void RemoveByGrade()
         {
-            _students.RemoveAll((x) => x.grade < MinGrade);             /*
+            //_students.RemoveAll((x) => x.grade < MinGrade);             
             for (int i = _students.Count - 1; i >= 0; i--)
             {
                 if (_students[i].grade < MinGrade)
                     _students.RemoveAt(i);
-            }*/
+            }
         }
         //add student to the list
         //in case the count exceed 92
@@ -102,10 +102,10 @@ namespace StudentEvents
         public void AddStudent(Student student)
         {
             _students.Add(student);
-            if(_students.Count > 92){
-                //throw new QueueLimitationException($"Queue exceeded limitation: {MaxStudents}");
-                if(LimitationExeeded != null)
-                    LimitationExeeded.Invoke(this, new MyEventArgs("Limitation exceeded 92 students"));
+            if(_students.Count > MaxStudents)
+            {
+                /* option 1*/ //throw new QueueLimitationException($"Queue exceeded limitation: {MaxStudents}");
+                /* option 2*/ LimitationExeeded?.Invoke(this, new MyEventArgs($"Limitation exceeded {MaxStudents} students"));
             }
         }
         //Print hte students
