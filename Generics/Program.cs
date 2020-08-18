@@ -21,7 +21,7 @@ Array:
 2. Limited to size (Fixed length).
 
 ArrayList:
-1. ArrayList are strongly typed.
+1. ArrayList is not strongly typed.
 2. Data can increase on need basis.
 3. It will do the boxing and unboxing while processing (decrease the performance).
 
@@ -109,6 +109,8 @@ namespace Generics
     class Something
     {
         public string _name { get; set; }
+        public string _id { get; set; }
+
         public Something(string str)
         {
             _name = str;

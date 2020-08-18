@@ -6,6 +6,12 @@ namespace ClassOperators
     {
         public static void Main(string[] args)
         {
+            /*
+            string str = "Yaiiv";
+            string str2 = "Nuriel";
+            string str3 = str + " " + str2;
+            */
+
             //create points
             Point Point1 = new Point(5, 10);//5,10
             Point Point2 = new Point(2, 7);//2,7

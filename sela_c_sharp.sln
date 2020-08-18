@@ -177,6 +177,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphD", "Graph\GraphD.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraPathAlgorithm", "DijkstraPathAlgorithm\DijkstraPathAlgorithm.csproj", "{37A1A75D-A127-46F3-A4CA-2BC21C43602E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquere", "MagicSquere\MagicSquere.csproj", "{705B4A3C-A459-4D23-BB47-443878EF71BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -535,5 +537,9 @@ Global
 		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Debug|anycpu.Build.0 = Debug|anycpu
 		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Release|anycpu.ActiveCfg = Release|anycpu
 		{37A1A75D-A127-46F3-A4CA-2BC21C43602E}.Release|anycpu.Build.0 = Release|anycpu
+		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
