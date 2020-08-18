@@ -2,6 +2,29 @@
 
 namespace Functions
 {
+    class Calc
+    {
+        public static int Div(int x, int y)
+        {
+            return x / y;
+        }
+        public static int Mul(int x, int y)
+        {
+            return x * y;
+        }
+        public static int Sub(int x, int y)
+        {
+            return x - y;
+        }
+        public static int Sum(int x, int y)
+        {
+            return x + y;
+        }
+        public static int Pow(int value)
+        {
+            return value * value;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -9,8 +32,23 @@ namespace Functions
             //Exc1();
             //Exc2();
             //Exc3();
-            Exc4();
+            //Exc4();
+            /* 1
+            string[] arr1 = { "hi", "ron", "hello", "by" };             Console.WriteLine("Before");             PrintArray(arr1);
+            Console.WriteLine("After");             */
+
+            Console.WriteLine($"Calc.Pow(2): {Calc.Pow(2)}");             Console.WriteLine($"Calc.Sub(4,9): {Calc.Sub(4,9)}");             Console.WriteLine($"Calc.Div(5,3): {Calc.Div(5,3)}");             Console.WriteLine($"Calc.Mul(6, 7): {Calc.Mul(6, 7)}");             Console.WriteLine($"Calc.Sum(6, 7): {Calc.Sum(6, 7)}");          }
+
+        static void PrintArray(string[] array)
+        {
+            foreach (var item in array)
+            {
+                Console.Write($"{item}, ");
+            }
+            Console.WriteLine();
         }
+
+
         //*************************  EXC 4 *************************//
         //Retrun common strings
         static void Exc4()
@@ -19,14 +57,7 @@ namespace Functions
             string[] arr1 = { "hi", "ron", "hello", "hi" };             string[] arr2 = { "hi", "ofek", "hello" };             string[] arrCom = new string[Math.Min(arr1.Length, arr2.Length)];             int counter = 0;             for (int i = 0; i < arr1.Length; i++)             {                 if (!inArray(arrCom, arr1[i]) && inArray(arr2, arr1[i]))                 {                     arrCom[counter++] = arr1[i];                 }             }             string[] finalArray = new string[counter];             for (int i = 0; i < finalArray.Length; i++)
             {
                 finalArray[i] = arrCom[i];
-            }              PrintArray(finalArray);          }         public static bool inArray(string[] arr, string input)         {             foreach (var item in arr)             {                 if (input == item)                 {                     return true;                 }             }             return false;         }          static void PrintArray(string [] array)
-        {
-            foreach (var item in array)
-            {
-                Console.Write($"{item}, ");
-            }
-            Console.WriteLine();
-        }
+            }              PrintArray(finalArray);          }         public static bool inArray(string[] arr, string input)         {             foreach (var item in arr)             {                 if (input == item)                 {                     return true;                 }             }             return false;         }  
         //*************************  EXC 3 *************************//
         //Find if Arrays is sorted and to which direction
         static void Exc3()

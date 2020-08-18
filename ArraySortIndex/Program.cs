@@ -17,6 +17,8 @@ namespace ArraySortIndex
 
         static int[] GetSortedArrayIndex(int[] arr)        {
             int temp, maxVal;            int[] arrIndex = new int[arr.Length];            for (int i = 0; i < arr.Length; i++)            {                arrIndex[i] = i;            }
+            //arrIndex[0] = 0, arrIndex[1] = 1 ... arrIndex[N-1] = N-1
+
             //loop array
             //All the idea is that the value apears in arr[arrIndex[i]]
             //Meaning that when we need to read the value we do arr[arrIndex[i]]
