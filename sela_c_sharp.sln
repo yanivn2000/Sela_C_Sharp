@@ -179,6 +179,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DijkstraPathAlgorithm", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicSquere", "MagicSquere\MagicSquere.csproj", "{705B4A3C-A459-4D23-BB47-443878EF71BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryLINQ", "DictionaryLINQ\DictionaryLINQ.csproj", "{91511A60-856A-47B1-8AFD-CAF1B4828D9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{0635F3A1-FE2E-4166-9317-0B8A610653B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lock1", "Lock1\Lock1.csproj", "{11F5800E-423A-41D3-868A-B637C5D5F005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -541,5 +547,17 @@ Global
 		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Debug|anycpu.Build.0 = Debug|anycpu
 		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Release|anycpu.ActiveCfg = Release|anycpu
 		{705B4A3C-A459-4D23-BB47-443878EF71BD}.Release|anycpu.Build.0 = Release|anycpu
+		{91511A60-856A-47B1-8AFD-CAF1B4828D9B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{91511A60-856A-47B1-8AFD-CAF1B4828D9B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{91511A60-856A-47B1-8AFD-CAF1B4828D9B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{91511A60-856A-47B1-8AFD-CAF1B4828D9B}.Release|anycpu.Build.0 = Release|anycpu
+		{0635F3A1-FE2E-4166-9317-0B8A610653B8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0635F3A1-FE2E-4166-9317-0B8A610653B8}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0635F3A1-FE2E-4166-9317-0B8A610653B8}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0635F3A1-FE2E-4166-9317-0B8A610653B8}.Release|anycpu.Build.0 = Release|anycpu
+		{11F5800E-423A-41D3-868A-B637C5D5F005}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{11F5800E-423A-41D3-868A-B637C5D5F005}.Debug|anycpu.Build.0 = Debug|anycpu
+		{11F5800E-423A-41D3-868A-B637C5D5F005}.Release|anycpu.ActiveCfg = Release|anycpu
+		{11F5800E-423A-41D3-868A-B637C5D5F005}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

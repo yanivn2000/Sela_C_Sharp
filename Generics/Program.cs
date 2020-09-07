@@ -41,6 +41,15 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+            int x = 55;
+            int y = 200;
+            Console.WriteLine(x.CompareTo(y));
+
+            Check3<int, float> check3 = new Check3<int, float>(5, (float)10.5);
+            Console.WriteLine(check3);
+
+
+            /*
             List<int> list = new List<int>();
             // Compare Integer
             Check<int> obj1 = new Check<int>();
@@ -55,7 +64,7 @@ namespace Generics
             Check<Something> obj3 = new Check<Something>();
             Result = obj3.Compare(a1, a2);
             Console.WriteLine("Something Comparison: {0}", Result);
-
+            */
             Console.Read();
         }
         // Generic class to accept all types of data types
@@ -91,6 +100,21 @@ namespace Generics
                 {
                     return false;
                 }
+            }
+        }
+        class Check3<T1, T2>
+        {
+            T1 data1;
+            T2 data2;
+
+            public Check3(T1 data1, T2 data2)
+            {
+                this.data1 = data1;
+                this.data2 = data2;
+            }
+            public override string ToString()
+            {
+                return $"{data1.ToString()} {data2.ToString()}";
             }
         }
         //instead of:
