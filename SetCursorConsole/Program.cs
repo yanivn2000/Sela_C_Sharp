@@ -32,9 +32,7 @@ namespace SetCursorConsole
 
             // Draw the left side of a 5x5 rectangle, from top to bottom.
             WriteAt("-", 0, 0);
-            WriteAt("+", 0, 0);
             WriteAt("-", 0, 1);
-            WriteAt("|", 0, 1);
             WriteAt("|", 0, 2);
             WriteAt("|", 0, 3);
             WriteAt("+", 0, 4);
