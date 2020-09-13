@@ -47,7 +47,8 @@ namespace Lock1
                 {
                     lock (runLock)
                     {
-                        if (flag) {
+                        if (flag)
+                        {
                             Console.WriteLine($" Ping =======>      0 ) ) ) ");
                             i++;
                             flag = false;
@@ -82,7 +83,7 @@ namespace Lock1
         {
             await Task.Run(() =>
             {
-                lock (runLock)
+               lock (runLock)
                 {
                     for (int i = 0; i < 100000; i++)
                     {
