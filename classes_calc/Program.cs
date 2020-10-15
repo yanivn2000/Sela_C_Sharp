@@ -10,6 +10,8 @@ namespace classes_calc
             int num1 = 5, num2 = 8;
             int result = calc.Add(num1, num2);
             Console.WriteLine($"The result of {num1} + {num2} is {result}");
+
+            Console.WriteLine("Bye bye..");
         }
     }
 
