@@ -19,10 +19,13 @@ namespace classes_calc
             */
 
             CalcPro calc = new CalcPro();
-            int num1 = 5, num2 = 8, num3 = 66;
-            Console.WriteLine($"Result after add {num1} is {calc.Add(num1)}");
+            float num1 = 5, num2 = 8, num3 = 66;
+            Console.WriteLine($"Result after sub {num1} is {calc.Sub(num1)}");
             Console.WriteLine($"Result after add {num2} is {calc.Add(num2)}");
-            Console.WriteLine($"Result after add {num3} is {calc.Add(num3)}");
+            Console.WriteLine($"Result after Reset is {calc.Reset()}");
+            Console.WriteLine($"Result after add {num1} is {calc.Add(num1)}");
+            Console.WriteLine($"Result after mult {num3} is {calc.Mult(num3)}");
+            Console.WriteLine($"Result after div {num2} is {calc.Div(num2)}");
 
         }
     }
@@ -35,6 +38,26 @@ namespace classes_calc
         public float Add(float x)
         {
             _result += x;
+            return _result;
+        }
+        public float Sub(float x)
+        {
+            _result -= x;
+            return _result;
+        }
+        public float Mult(float x)
+        {
+            _result *= x;
+            return _result;
+        }
+        public float Div(float x)
+        {
+            _result /= x;
+            return _result;
+        }
+        public float Reset()
+        {
+            _result = 0;
             return _result;
         }
     }
