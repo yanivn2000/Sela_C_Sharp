@@ -189,11 +189,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetCursorConsole", "SetCurs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variable1", "Variable1\Variable1.csproj", "{64D462A1-14CC-45E0-948A-0A84D6CFE491}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{FEC3FEE7-BFB2-4422-8793-26C5F01540E7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes_basic1", "classes_basic1\classes_basic1.csproj", "{A1A7ABB6-7765-4533-9F0A-42A8FBA1A642}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classes_calc", "classes_calc\classes_calc.csproj", "{5D1952AE-B82D-4AE3-A9A2-3702840C94F4}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{A5BC686A-C64D-4CEA-AB5E-C008A1A795DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{58C72AFD-D5A9-4B6C-87C0-F1A0F9FE6FC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -577,10 +579,6 @@ Global
 		{64D462A1-14CC-45E0-948A-0A84D6CFE491}.Debug|anycpu.Build.0 = Debug|anycpu
 		{64D462A1-14CC-45E0-948A-0A84D6CFE491}.Release|anycpu.ActiveCfg = Release|anycpu
 		{64D462A1-14CC-45E0-948A-0A84D6CFE491}.Release|anycpu.Build.0 = Release|anycpu
-		{FEC3FEE7-BFB2-4422-8793-26C5F01540E7}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{FEC3FEE7-BFB2-4422-8793-26C5F01540E7}.Debug|anycpu.Build.0 = Debug|anycpu
-		{FEC3FEE7-BFB2-4422-8793-26C5F01540E7}.Release|anycpu.ActiveCfg = Release|anycpu
-		{FEC3FEE7-BFB2-4422-8793-26C5F01540E7}.Release|anycpu.Build.0 = Release|anycpu
 		{A1A7ABB6-7765-4533-9F0A-42A8FBA1A642}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{A1A7ABB6-7765-4533-9F0A-42A8FBA1A642}.Debug|anycpu.Build.0 = Debug|anycpu
 		{A1A7ABB6-7765-4533-9F0A-42A8FBA1A642}.Release|anycpu.ActiveCfg = Release|anycpu
@@ -589,5 +587,13 @@ Global
 		{5D1952AE-B82D-4AE3-A9A2-3702840C94F4}.Debug|anycpu.Build.0 = Debug|anycpu
 		{5D1952AE-B82D-4AE3-A9A2-3702840C94F4}.Release|anycpu.ActiveCfg = Release|anycpu
 		{5D1952AE-B82D-4AE3-A9A2-3702840C94F4}.Release|anycpu.Build.0 = Release|anycpu
+		{A5BC686A-C64D-4CEA-AB5E-C008A1A795DB}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{A5BC686A-C64D-4CEA-AB5E-C008A1A795DB}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A5BC686A-C64D-4CEA-AB5E-C008A1A795DB}.Release|anycpu.ActiveCfg = Release|anycpu
+		{A5BC686A-C64D-4CEA-AB5E-C008A1A795DB}.Release|anycpu.Build.0 = Release|anycpu
+		{58C72AFD-D5A9-4B6C-87C0-F1A0F9FE6FC1}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{58C72AFD-D5A9-4B6C-87C0-F1A0F9FE6FC1}.Debug|anycpu.Build.0 = Debug|anycpu
+		{58C72AFD-D5A9-4B6C-87C0-F1A0F9FE6FC1}.Release|anycpu.ActiveCfg = Release|anycpu
+		{58C72AFD-D5A9-4B6C-87C0-F1A0F9FE6FC1}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

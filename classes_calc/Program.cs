@@ -6,6 +6,16 @@ namespace classes_calc
     {
         public static void Main(string[] args)
         {
+            int number = 42;
+            if ((number % 2) == 0)
+            {
+                Console.WriteLine("Even number");
+            }
+            else
+            {
+                Console.WriteLine("Odd number");
+            }
+
             /*
             Calc calc = new Calc();
             int num1 = 5, num2 = 8, per = 30;
@@ -16,31 +26,52 @@ namespace classes_calc
             Console.WriteLine($"The result of {num1} x {num2} is {calc.Mult(num1, num2)}");
             Console.WriteLine($"The result of {num1} / {num2} is {calc.Div(num1, num2)}");
             Console.WriteLine($"The result of {per}% of {num2} is {calc.Percent(num2, per)}");
-            */
-
             
+
             CalcPro calc = new CalcPro();
             float num1 = 5, num2 = 8, num3 = 66;
             Console.WriteLine($"Result after sub {num1} is {calc.Sub(num1)}");
-            Console.WriteLine($"Result after percent 20 is {calc.Percent(20)}");
+            Console.WriteLine($"Result after percent 10 is {calc.Percent(10)}");
+            Console.WriteLine($"Result after percent 150 is {calc.Percent(150)}");
             Console.WriteLine($"Result after add {num2} is {calc.Add(num2)}");
             Console.WriteLine($"Result after Reset is {calc.Reset()}");
             Console.WriteLine($"Result after add {num1} is {calc.Add(num1)}");
             Console.WriteLine($"Result after mult {num3} is {calc.Mult(num3)}");
-            Console.WriteLine($"Result after div {num2} is {calc.Div(num2)}");
-            
+            Console.WriteLine($"Result after div {num2} is {calc.Div(10)}");
+            Console.WriteLine($"Current result {calc.GetCurrentResult()}");
+            */
         }
     }
 
 
     class CalcPro
     {
-        public float _result = 0;
+        private float _result = 0;
 
+        //isEven?
+        public bool isEven()
+        {
+            if ((_result % 2) == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public float GetCurrentResult()
+        {
+            return _result;
+        }
         public float Percent(float x)
         {
-            _result *= x/100;
-            //_result = _result * x / 100;
+            if (x >= 100)
+            {
+                Console.WriteLine("Error: percentage must be smaller than 100");
+            }
+            else
+            {
+                _result *= x / 100;
+            }
             return _result;
         }
 
