@@ -4,17 +4,9 @@ namespace classes_calc
 {
     class MainClass
     {
+
         public static void Main(string[] args)
         {
-            int number = 42;
-            if ((number % 2) == 0)
-            {
-                Console.WriteLine("Even number");
-            }
-            else
-            {
-                Console.WriteLine("Odd number");
-            }
 
             /*
             Calc calc = new Calc();
@@ -26,9 +18,12 @@ namespace classes_calc
             Console.WriteLine($"The result of {num1} x {num2} is {calc.Mult(num1, num2)}");
             Console.WriteLine($"The result of {num1} / {num2} is {calc.Div(num1, num2)}");
             Console.WriteLine($"The result of {per}% of {num2} is {calc.Percent(num2, per)}");
-            
+
+
 
             CalcPro calc = new CalcPro();
+            calc.PrintWelcome("Mr.");
+
             float num1 = 5, num2 = 8, num3 = 66;
             Console.WriteLine($"Result after sub {num1} is {calc.Sub(num1)}");
             Console.WriteLine($"Result after percent 10 is {calc.Percent(10)}");
@@ -48,6 +43,7 @@ namespace classes_calc
     {
         private float _result = 0;
 
+    
         //isEven?
         public bool isEven()
         {

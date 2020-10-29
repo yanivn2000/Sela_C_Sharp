@@ -47,7 +47,7 @@ namespace Bank
         private string _password;
         private float _balance = 0;
 
-        public float Deposit(float x, ouint r)
+        public float Deposit(float x)
         {
             if (x > 0)
                 _balance += x;
