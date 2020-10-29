@@ -8,7 +8,7 @@ namespace classes_calc
         public static void Main(string[] args)
         {
 
-            /*
+            
             Calc calc = new Calc();
             int num1 = 5, num2 = 8, per = 30;
             Console.WriteLine("Bye bye..");
@@ -20,7 +20,7 @@ namespace classes_calc
             Console.WriteLine($"The result of {per}% of {num2} is {calc.Percent(num2, per)}");
 
 
-
+            /*
             CalcPro calc = new CalcPro();
             calc.PrintWelcome("Mr.");
 
