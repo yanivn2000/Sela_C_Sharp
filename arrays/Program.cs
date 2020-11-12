@@ -1,14 +1,245 @@
 ﻿using System;
-using System.Linq;
 
 namespace Today
 {
+    class Calc
+    {
+        public static int Add(int x, int y)
+        {
+            return x + y;
+        }
+
+    }
     class MainClass
     {
+        static void CreateRandomArray2D(int [,] array)
+        {
+            Random rand = new Random();
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = rand.Next(1, 100);
+                }
+            }
+        }
 
+
+        public static void Swap(ref int x, ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+        public static bool doSomthing(int x, out int num)
+        {
+            if (x > 10)
+            {
+                num = x * x;
+                return true;
+            }
+            else
+            {
+                num = x;
+                return false;
+            }
+        }
         static void Main(string[] args)
         {
-            forEach();
+
+            /*
+            string a = "hello dear students";
+            char[] letters = a.ToCharArray();
+            letters[6] = 'D';
+            Console.WriteLine(a[0]);
+
+            string alphabet = new string(letters);
+
+            double[,] y = new double[5, 10];
+
+            double[] x1 = new double[5];
+
+            double[][] x = new double[5][];
+
+            x[0] = new double[10];
+            x[1] = new double[9];
+            x[2] = new double[8];
+            x[3] = new double[7];
+            x[4] = new double[5];
+
+            x[3][2] = 10;
+            */
+            /*
+            int a = 13, num;
+            bool res = doSomthing(a, out num);
+
+            Console.WriteLine($"Result is {res}, num is {num}");
+            */
+
+            /*
+            int a = 10, b = 5 ;
+            Console.WriteLine($"a: {a}, b {b}");
+            Swap(ref a, ref b);
+            Console.WriteLine($"a: {a}, b {b}");
+            */
+
+            /*
+            int[,] array = new int[4, 5];
+            CreateRandomArray2D(array);
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write($"{array[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+            */
+            /*
+            //int [3,4]
+            int[,] gameBoard = { { 1, 2, 3, 4}, { 2, 3, 5, 16 }, { 5, 8, 6, 4 } };
+            Console.WriteLine(gameBoard.Length);
+            //gameBoard.GetLength(0) - number of rows (3)
+            for (int i = 0; i < gameBoard.GetLength(0); i++)
+            {
+                //gameBoard.GetLength(1) - number of cols (4)
+                for (int j = 0; j < gameBoard.GetLength(1); j++)
+                {
+                    Console.Write($"{gameBoard[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+
+
+            //Max value from each row
+            for (int i = 0; i < gameBoard.GetLength(0); i++)
+            {
+                int maxRow = int.MinValue;
+                for (int j = 0; j < gameBoard.GetLength(1); j++)
+                {
+                    if (maxRow < gameBoard[i, j])
+                        maxRow = gameBoard[i, j];
+                }
+                Console.WriteLine($"The max value in row {i} is {maxRow}");
+            }
+
+            //Sum of each row
+            for (int i = 0; i < gameBoard.GetLength(0); i++)
+            {
+                int sumRow = 0;
+                for (int j = 0; j < gameBoard.GetLength(1); j++)
+                {
+                    sumRow += gameBoard[i, j];
+                }
+                Console.WriteLine($"The sum value in row {i} is {sumRow}");
+            }
+
+            //Sum of each column
+            for (int i = 0; i < gameBoard.GetLength(1); i++)
+            {
+                int sumCol = 0;
+                for (int j = 0; j < gameBoard.GetLength(0); j++)
+                {
+                    sumCol += gameBoard[j, i];
+                }
+                Console.WriteLine($"The sum value in col {i} is {sumCol}");
+            }
+            */
+
+            /*
+
+            int[] arr = { 5, 55, 99, 98, 13, 77, 80, 50 };
+
+            //Bubble sort
+            BubbleSort(arr);
+            Console.WriteLine($"Sorted: {string.Join(", ", arr)}");
+
+            Console.WriteLine($"Search for 55: {BinarySearch(arr, 55)}");
+            Console.WriteLine($"Search for 80: {BinarySearch(arr, 80)}");
+            Console.WriteLine($"Search for 56: {BinarySearch(arr, 56)}");
+            */
+
+
+
+            /*
+            Random rand = new Random();
+            int arraySize = 10;
+            int[] arr1 = new int[arraySize];
+            int[] arr2 = new int[arraySize];
+
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                arr1[i] = rand.Next(100, 200);
+                arr2[i] = rand.Next(0, 10);
+            }
+            //arr1 = 100\t   150,    167
+            //arr2 = 0,     6,      8
+            //arr3 = 100,   156,    175
+            int[] arr3 = new int[arraySize];
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                arr3[i] = arr1[i] + arr2[i];
+            }
+            Console.WriteLine($"arr1\tarr2\tarr3");
+
+            for (int i = 0; i < arr3.Length; i++)
+            {
+                Console.WriteLine($"{arr1[i]}\t{arr2[i]}\t{arr3[i]}");
+            }
+            */
+            /*
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write("Please neter a number: ");
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            
+            //print the bigest number in the array
+
+
+            //Calculate the sum of the array
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                //check if arr[i] is divided by 2
+                if(arr[i] % 2 == 0)
+                    sum += arr[i];
+            }
+            //calculate the average
+            Console.WriteLine($"The sum of the all the even elements in the array is {sum}");
+            //Console.WriteLine($"The average of the {arr.Length} elements in the array is {sum / arr.Length}");
+            */
+            /*
+
+            const int numberOfMonths = 100;
+
+            Random rand = new Random();
+
+            //create array of 50 int
+            int arraySize = 10;
+            int[] arrayInt2 = new int[arraySize];
+            //set random values into the array
+            for (int i = 0; i < arrayInt2.Length; i++)
+            {
+                arrayInt2[i] = i;
+            }
+            Console.WriteLine("print array from beginning to end");
+            for (int i = 0; i < arrayInt2.Length; i++)
+            {
+                Console.WriteLine(arrayInt2[i]);
+            }
+            Console.WriteLine("print array from end to beginning");
+            for (int i = arrayInt2.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(arrayInt2[i]);
+            }
+            */
+
+
+            //forEach();
             //Exc11(args);
             //Exc12(args);
             //Exc13(args);
@@ -17,6 +248,43 @@ namespace Today
             Console.ReadKey();
         }
 
+        public static int BinarySearch(int[] arr, int key)
+        {
+            int left = 0;
+            int right = arr.Length - 1;
+
+            while (left <= right)
+            {
+                int mid = (left + right) / 2;
+                if (key == arr[mid])
+                    return mid;
+                else if (key < arr[mid])
+                    right = mid - 1;
+                else
+                    left = mid + 1;
+            }
+            return -1;
+        }
+
+        static void BubbleSort(int []arr)
+        {
+            int temp;
+            for (int j = 0; j < arr.Length - 1; j++)//
+            {
+                //bubble up the largest element
+                for (int i = 0; i < arr.Length - 1 - j; i++)
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        temp = arr[i + 1];
+                        arr[i + 1] = arr[i];
+                        arr[i] = temp;
+                    }
+                }
+            }
+        }
+        public static void MaxNumArray(int[] r) //get the max num in array
+        {            int location = 0, maxnum = int.MinValue;            for (int i = 0; i < r.Length; i++)            {                if (maxnum < r[i])                {                    maxnum = r[i];                    location = i;                }            }            Console.WriteLine($" The max num is {maxnum} in location {location}");        }
         static void forEach()
         {
 
@@ -170,7 +438,6 @@ namespace Today
                 Console.WriteLine($"String {str} is Polyndrom");
             else
                 Console.WriteLine($"String {str} is not Polyndrom");
-
         }
 
         static void Exc14(string[] args)

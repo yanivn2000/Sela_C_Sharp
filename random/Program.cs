@@ -7,13 +7,35 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Console.WriteLine("This is Main");
+            Random random = new Random();
+
+            //10, 20, 30, ... 100
+            for (int i = 0; i < 5; i++)
+            {
+                int number = random.Next(1, 11);
+                Console.WriteLine(number * 10);
+            }
+
+            
+
+
+
+
+
+            /*
+            double myRandom = MyNextDouble(random, a, b);
+            Console.WriteLine(myRandom);
+            */
+            //Console.WriteLine("This is Main");
             //MainRandom1(args);
             //MainRandom2(args);
             //MainRandom3(args);
-            MainRandom4(args);
-            Console.ReadKey();
+            //MainRandom4(args);
 
+        }
+        static public double MyNextDouble(Random random, int a, int b)
+        {
+            return (b - a) * random.NextDouble()/*0.0 - 1*/ + a;
         }
         /*
         static public int Min(int number1, int number2)
@@ -128,6 +150,8 @@ namespace ConsoleApp1
         }
         static void MainRandom1(string[] args)
         {
+            //Seconds since 1970
+            //500 + 700 * 987 / Time % int.Max
             int numberOfIterations = 21; // number of iterations
             Random rand = new Random();
             int biggestSum = 0;

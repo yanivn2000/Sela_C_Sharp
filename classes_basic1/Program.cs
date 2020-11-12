@@ -6,15 +6,19 @@ namespace classes_basic1
     {
         public static void Main(string[] args)
         {
+
             Person person1 = new Person();
-            person1._name = "Yaniv";
-            person1._age = 44;
+            person1.SetName("Yaniv");
+            if(!person1.SetAge(44))
+                Console.WriteLine("Bad age");
 
             person1.PrintMeWithHeader("Mr.");
 
             Person person2 = new Person();
-            person2._name = "David";
-            person2._age = 37;
+            person2.SetName("David");
+            if(person2.SetAge(37))
+                Console.WriteLine("Bad age");
+
 
             person2.PrintMeWithHeader("Mr.");
             person2.PrintYearOfBirth();
@@ -23,8 +27,24 @@ namespace classes_basic1
 
     class Person
     {
-        public string _name;
-        public int _age;
+        private string _name;
+        private int _age;
+
+        public void SetName(string name)
+        {
+            _name = name;
+        }
+        public bool SetAge(int age)
+        {
+            if (age < 0)
+            {
+                _age = 0;
+                return false;
+            }
+            _age = age;
+            return true;
+
+        }
 
         public void PrintMe()
         {

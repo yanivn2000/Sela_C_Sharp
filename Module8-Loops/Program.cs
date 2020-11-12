@@ -115,6 +115,8 @@ namespace Module8Loops
 
 
             //for (int i = 0; i < max; i++)
+
+
             while (true)
             {
                 num = 0;
@@ -122,7 +124,7 @@ namespace Module8Loops
                 int.TryParse(Console.ReadLine(), out num);
                 if (num == 0)
                     break;
-                if (num < 0)
+                if (num > 10)
                     continue;
                 Console.WriteLine(Math.Sqrt(num));
             }
@@ -252,16 +254,90 @@ namespace Module8Loops
             Console.WriteLine($"The minimal sum for the minimal values is: {min1}, {min2}, {min3}, {min4} = {min1 + min2 + min3 + min4}");
 
         }
+
+        //Factiroal -
+        //in case of error return 0
+        public static int Factorial(int numberInt)
+        {
+            if (numberInt < 0) return 0;
+
+            int result = 1;
+
+            for (int i = 1; i <= numberInt; i++)
+            {
+                result *= i;
+            }
+
+            return result;
+        }
+
+        public static long Something(int a, int b)
+        {
+            long result = 1;
+            for (int i = 1; i < b; i++)
+                result *= a;
+            return result;
+        }
+
         public static void Main(string[] args)
         {
+
+
+
+
+
+
+
+
+
+            Console.WriteLine(Something(3,5));
+            
+            /*
+            int num = 1;
+            int res = 0;
+            Console.WriteLine($"The factorial of {num} is {res}");
+
+            //-5
+            if(Factorial(-5) == 0)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            //0
+            if (Factorial(0) == 1)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            //1
+            if (Factorial(1) == 1)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            //5
+            if (Factorial(5) == 120)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            //11
+            if (Factorial(11) == 39916800)
+                Console.WriteLine("True");
+            else
+                Console.WriteLine("False");
+
+            */
             /*
             ConclusionLabs07();
             */
+
+            /*
             int number = 76566;
             int dividing = 3;
             int diviBy2 = ConclusionLabs01(number, dividing);
             Console.WriteLine($"the number {number} is divded by {dividing} {diviBy2} times");
-
+            */
 
             /*
             //PrintSqrLab12_1(5, 5);

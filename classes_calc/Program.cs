@@ -7,7 +7,6 @@ namespace classes_calc
 
         public static void Main(string[] args)
         {
-
             
             Calc calc = new Calc();
             int num1 = 5, num2 = 8, per = 30;
