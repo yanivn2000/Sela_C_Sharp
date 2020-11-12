@@ -6,33 +6,62 @@ namespace classes_basic1
     {
         public static void Main(string[] args)
         {
+            Person[] personArr = new Person[3];
+            for (int i = 0; i < personArr.Length; i++)
+            {
+                Person person = new Person();
+                Console.Write("What your name? ");
+                person.Name = Console.ReadLine();
+                Console.Write("\nHow old are you? ");
 
-            Person person1 = new Person();
-            person1.SetName("Yaniv");
-            if(!person1.SetAge(44))
-                Console.WriteLine("Bad age");
+                
+                while (!person.SetAge(ReadNum()))
+                {
+                    Console.WriteLine("YOU NEED TO BE WITH A POSITIVE AGE!");
+                }
+                personArr[i] = person;
+            }
 
-            person1.PrintMeWithHeader("Mr.");
+            foreach (var person in personArr)
+            {
+                person.PrintMe();
+            }
 
-            Person person2 = new Person();
-            person2.SetName("David");
-            if(person2.SetAge(37))
-                Console.WriteLine("Bad age");
-
-
-            person2.PrintMeWithHeader("Mr.");
-            person2.PrintYearOfBirth();
+        }
+        public static int ReadNum()
+        {
+            int num = 0;
+            while (!int.TryParse(Console.ReadLine(), out num))
+            {
+                Console.WriteLine("GIVE ME NUMBER!!");
+            }
+            return num;
         }
     }
 
     class Person
     {
+        string[] _address;
         private string _name;
-        private int _age;
-
-        public void SetName(string name)
+        public string Name
         {
+            get { return "NAME:" + _name; }
+            set { _name = value; }
+        }
+        private int _age;
+        public Person(string name = "DEFAULT", int age = 0, int numOfAddresses = 2)
+        {
+            _age = 99;
             _name = name;
+            _address = new string[numOfAddresses];
+            Console.WriteLine("New person was created");
+        }
+        public Person()
+        {
+            _age = 99;
+            _name = "";
+            _address = new string[2];
+            Console.WriteLine("New person was created");
         }
         public bool SetAge(int age)
         {
@@ -48,12 +77,7 @@ namespace classes_basic1
 
         public void PrintMe()
         {
-            Console.WriteLine($"Person details - name: {_name} age: {_age}");
-
-        }
-        public void PrintMeWithHeader(string header)
-        {
-            Console.WriteLine($"Person details - name: {header} {_name} age: {_age}");
+            Console.WriteLine($"Person details - name: {Name} age: {_age}");
         }
         public void PrintYearOfBirth()
         {
