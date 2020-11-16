@@ -203,6 +203,8 @@ Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SstNumberBoolArray", "BooleanArray\SstNumberBoolArray.csproj", "{74939419-2746-4CE3-A6D4-49FA25BCDDBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalProject", "AnimalProject\AnimalProject.csproj", "{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -613,5 +615,9 @@ Global
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Release|anycpu.ActiveCfg = Release|anycpu
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Release|anycpu.Build.0 = Release|anycpu
+		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal

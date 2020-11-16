@@ -3,7 +3,7 @@ namespace AnimalProject
 {
     public class Cat : Mammal
     {
-        public string MakeSound()
+        override public string MakeSound()
         {
             return "Meow";
         }
@@ -11,6 +11,19 @@ namespace AnimalProject
             base(scientific_name, gestation_period)
         {
 
+        }
+        override public string Move()
+        {
+            return "Cat step..";
+        }
+        override public string PrintMe()
+        {
+            return base.PrintMe() + ":" + "Cat";
+        }
+
+        public override string ToString()
+        {
+            return base.ToString()+ $"Cat: Make Sound: {MakeSound()}, Move: {Move()}";
         }
     }
 }

@@ -6,12 +6,19 @@ namespace AnimalProject
     {
         public static void Main(string[] args)
         {
-            Cat cat1 = new Cat("Pet Cat", 4);
-            Dog dog1 = new Dog("Pet Dog", 6);
+            Animal[] animals = new Animal[2];
+            animals[0] = new Cat("Pet Cat", 4);
+            animals[1] = new Dog("Pet Dog", 6);
 
-            Console.WriteLine($"{cat1.ScientificName} make a sound: {cat1.MakeSound()}");
-            Console.WriteLine($"{dog1.ScientificName} make a sound: {dog1.MakeSound()}");
+            PrintDertails(animals);
+        }
 
+        static public void PrintDertails(Animal []animals)
+        {
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal);
+            }
         }
     }
 }

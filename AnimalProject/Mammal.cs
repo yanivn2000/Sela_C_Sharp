@@ -10,5 +10,10 @@ namespace AnimalProject
         {
             _gestationPeriod = gestation_period;
         }
+        override public string PrintMe()
+        {
+            return base.PrintMe() + ":" + "Mammal";
+        }
+
     }
 }
