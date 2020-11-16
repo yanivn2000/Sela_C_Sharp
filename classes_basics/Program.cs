@@ -28,18 +28,18 @@ namespace classes_basics
                 Date date1 = new Date(day, month, year);
                 //check if the date is valid
                 if (date1.isValid())
-                    Console.WriteLine($"Date is valid: {date1.ToString()}");
+                    Console.WriteLine($"Date is valid: {date1}");
                 else
                     Console.WriteLine($"Date is invalid!");
                 //add 1 days to the date
                 Date nextDate = date1.GetNextDay();
                 if (nextDate != null)
-                    Console.WriteLine($"Next date is: {nextDate.ToString()}");
+                    Console.WriteLine($"Next date is: {nextDate}");
 
                 //add 5 days to the date
                 Date next5Date = date1.GetNextDays(5);
                 if(nextDate != null)
-                    Console.WriteLine($"Next date is: {next5Date.ToString()}");
+                    Console.WriteLine($"5 days after is: {next5Date}");
 
 
                 Console.WriteLine("Enter 1 to quit, or enter to continue:");
@@ -53,10 +53,15 @@ namespace classes_basics
 
     class Date
     {
+        private int _day;
+        private int _month;
+        private int _year;
         //props
-        public int _day { get; set; }
-        public int _month { get; set; }
-        public int _year { get; set; }
+        /*
+        public int Day { get { return _day; } set { _day = value; } }
+        public int Month { get { return _month; } set { _month = value; } }
+        public int Year { get { return _year; } set { _year = value; } }
+        */
 
         //ctor
         public Date(int day, int month, int year)
@@ -110,7 +115,10 @@ namespace classes_basics
             {
                 case 2:
                     {
-                        if(_year % 4 == 0)
+                        if (_year % 100 == 0)
+                            if (_day < 1 || _day > 28)
+                                return false;//day is invalid
+                        else if (_year % 4 == 0)
                         {
                             if (_day < 1 || _day > 29)
                                 return false;//day is invalid
