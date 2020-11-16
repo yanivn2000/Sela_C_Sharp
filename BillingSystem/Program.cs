@@ -13,7 +13,7 @@ namespace BillingSystem
             {
                 Console.Write("What your name? ");
                 string name = Console.ReadLine();
-                customers[i] = new Customer(name, 0);
+                customers[i] = Customer.Create(name);
             }
 
 
