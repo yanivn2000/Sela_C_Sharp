@@ -27,7 +27,7 @@ namespace classes_basics
                 //create an instance of a date
                 Date date1 = new Date(day, month, year);
                 //check if the date is valid
-                if (date1.isValid())
+                if (date1.isValid()) 
                     Console.WriteLine($"Date is valid: {date1}");
                 else
                     Console.WriteLine($"Date is invalid!");
