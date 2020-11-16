@@ -197,9 +197,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module8-Loops", "Module8-Loops\Module8-Loops.csproj", "{867F717D-4445-4815-8A92-3EEAA7631745}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{F4DE93EF-2560-42C6-8BA9-20F26CE4C3FE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingSystem", "BillingSystem\BillingSystem.csproj", "{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SstNumberBoolArray", "BooleanArray\SstNumberBoolArray.csproj", "{74939419-2746-4CE3-A6D4-49FA25BCDDBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -599,13 +601,17 @@ Global
 		{867F717D-4445-4815-8A92-3EEAA7631745}.Debug|anycpu.Build.0 = Debug|anycpu
 		{867F717D-4445-4815-8A92-3EEAA7631745}.Release|anycpu.ActiveCfg = Release|anycpu
 		{867F717D-4445-4815-8A92-3EEAA7631745}.Release|anycpu.Build.0 = Release|anycpu
-		{F4DE93EF-2560-42C6-8BA9-20F26CE4C3FE}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{F4DE93EF-2560-42C6-8BA9-20F26CE4C3FE}.Debug|anycpu.Build.0 = Debug|anycpu
-		{F4DE93EF-2560-42C6-8BA9-20F26CE4C3FE}.Release|anycpu.ActiveCfg = Release|anycpu
-		{F4DE93EF-2560-42C6-8BA9-20F26CE4C3FE}.Release|anycpu.Build.0 = Release|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Debug|anycpu.Build.0 = Debug|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Release|anycpu.ActiveCfg = Release|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Release|anycpu.Build.0 = Release|anycpu
+		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Debug|anycpu.Build.0 = Debug|anycpu
+		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Release|anycpu.ActiveCfg = Release|anycpu
+		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Release|anycpu.Build.0 = Release|anycpu
+		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
