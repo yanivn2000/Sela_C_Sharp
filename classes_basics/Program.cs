@@ -26,6 +26,8 @@ namespace classes_basics
 
                 //create an instance of a date
                 Date date1 = new Date(day, month, year);
+
+                date1.Year = -1000;
                 //check if the date is valid
                 if (date1.isValid()) 
                     Console.WriteLine($"Date is valid: {date1}");
@@ -53,15 +55,23 @@ namespace classes_basics
 
     class Date
     {
-        private int _day;
+        //members
+        public int _day;
         private int _month;
         private int _year;
+
         //props
-        /*
         public int Day { get { return _day; } set { _day = value; } }
         public int Month { get { return _month; } set { _month = value; } }
-        public int Year { get { return _year; } set { _year = value; } }
-        */
+        //public int Year { get { return _year; } set { _year = value; } }
+        public int Year { get { return _year; } set {
+                if (value < 0)
+                    _year = 1970;
+                else
+                    _year = value;
+            }
+        }
+
 
         //ctor
         public Date(int day, int month, int year)
