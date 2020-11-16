@@ -62,12 +62,29 @@ namespace SstNumberBoolArray
         {
             int[] arrayInt = new int[_set_counter];
             
-            for (int j = 0, i = 0; i < _size; i++)
+            for (int j = 0, i = 0; i <= _size; i++)
             {
                 if (_array[i] == true)
                     arrayInt[j++] = i;
             }
             return arrayInt;
+        }
+
+        public void Union(Set set)
+        {
+            //loop on the set (parameter received)
+            for (int i = 0; i <= _size; i++)
+            {
+                if (set._array[i])
+                {
+                    if (_array[i] == false)
+                    {
+                        _array[i] = true;
+                        _set_counter++;
+                    }
+                }
+            }
+            
         }
     }
 }

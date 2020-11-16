@@ -23,8 +23,10 @@ namespace SstNumberBoolArray
             set1.Insert(10);
             set1.Insert(20);
             set1.Insert(30);
-            Console.WriteLine("Print set1:");
-            foreach (var item in set1.GetSet())
+
+            set2.Union(set1);
+            Console.WriteLine("Print set2 after union:");
+            foreach (var item in set2.GetSet())
             {
                 Console.WriteLine(item);
             }
