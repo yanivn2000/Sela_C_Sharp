@@ -24,6 +24,23 @@ namespace OutRefParameters
             Console.WriteLine($"Full name after ToUpper is {fullName}");
 
 
+
+            int[] array = new int[10];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = i;
+            }
+            UpdateArray(array);
+            foreach (var item in array)
+            {
+                Console.WriteLine(item + ", ");
+            }
+            ReplaceArray(ref array);
+            foreach (var item in array)
+            {
+                Console.WriteLine(item + ", ");
+            }
+
         }
         public static void FillName(out FullName full_name)
         {
@@ -50,6 +67,21 @@ namespace OutRefParameters
         public static void doSomthingRef(ref int num)
         {
             num *= num;
+        }
+        public static void UpdateArray(int []array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] *= array[i];
+            }
+        }
+        public static void ReplaceArray(ref int[] array)
+        {
+            array = new int[10];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = array.Length-i;
+            }
         }
     }
 
