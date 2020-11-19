@@ -16,13 +16,9 @@ namespace AnimalProject
         }
         virtual public string Move()
         {
-            return "Mammal step..";
+            return "Animal step..";
         }
 
-        virtual public string PrintMe()
-        {
-            return "Animal";
-        }
         public override string ToString()
         {
             return "Animal";

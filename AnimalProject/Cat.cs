@@ -16,14 +16,10 @@ namespace AnimalProject
         {
             return "Cat step..";
         }
-        override public string PrintMe()
-        {
-            return base.PrintMe() + ":" + "Cat";
-        }
 
         public override string ToString()
         {
-            return base.ToString()+ $"Cat: Make Sound: {MakeSound()}, Move: {Move()}";
+            return base.ToString() + $", Cat: Make Sound: {MakeSound()}, Move: {Move()}";
         }
     }
 }

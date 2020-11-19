@@ -38,6 +38,7 @@
     <Compile Include="Mammal.cs" />
     <Compile Include="Cat.cs" />
     <Compile Include="Dog.cs" />
+    <Compile Include="Lion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

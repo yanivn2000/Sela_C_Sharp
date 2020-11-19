@@ -11,13 +11,15 @@ namespace AnimalProject
         public Dog(string scientific_name, int gestation_period) : base(scientific_name, gestation_period)
         {
         }
-        override public string PrintMe()
+
+        override public string Move()
         {
-            return base.PrintMe() + ":" + "Dog";
+            return "Dog step..";
         }
+
         public override string ToString()
         {
-            return base.ToString() + $"Dog: Make Sound: {MakeSound()}, Move: {Move()}";
+            return base.ToString() + $", Dog: Make Sound: {MakeSound()}, Move: {Move()}";
         }
     }
 }
