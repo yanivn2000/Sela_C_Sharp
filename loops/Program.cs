@@ -51,6 +51,7 @@ namespace conditions
             int sum = 0;
             int count = 0;
             Console.WriteLine("Please enter 10 numbers: ");
+
             do
             {
                 Console.Write($"Please enter number #{count+1}: ");

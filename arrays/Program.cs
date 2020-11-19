@@ -271,10 +271,17 @@ namespace Today
 
             string name = "Yaniv Nuriel";
 
-            foreach (var item in name)
+            foreach (char item in name)
             {
                 Console.WriteLine($"{item}");
             }
+
+            for (int i = 0; i < name.Length; i++)
+            {
+                Console.WriteLine($"{name[i]}");
+            }
+
+
             int[] arr1 = { 1, 4, 5, 2, 3, 7, 1 };
             foreach (int number in arr1)
                 Console.WriteLine($"{number}");

@@ -20,6 +20,15 @@ namespace AnimalProject
             animals[(int)E_ANIMALS.DOG] = new Dog("Pet Dog", 6);
             animals[(int)E_ANIMALS.LION] = new Lion("African Lion", 7);
 
+            animals[(int)E_ANIMALS.LION].SetCategory("Cats");
+            Console.WriteLine(animals[(int)E_ANIMALS.LION].GetCategory());
+
+            animals[(int)E_ANIMALS.LION].ScientificName = "Wild cats";
+            Console.WriteLine(animals[(int)E_ANIMALS.LION].ScientificName);
+
+
+
+
             Console.Write("Please enter your animal (-1 quit, 0 - Cat, 1 - Dog, 2 - Lion): ");
             E_ANIMALS user_selctor = (E_ANIMALS)(int.Parse(Console.ReadLine()));
             Animal animal;

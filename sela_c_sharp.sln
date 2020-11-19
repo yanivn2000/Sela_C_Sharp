@@ -207,6 +207,8 @@ Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutRefParameters", "OutRefParameters\OutRefParameters.csproj", "{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asyncWait2", "asyncWait2\asyncWait2.csproj", "{373604B0-0A75-4930-80CD-A7F7F44C2FB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -625,5 +627,9 @@ Global
 		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Debug|anycpu.Build.0 = Debug|anycpu
 		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Release|anycpu.ActiveCfg = Release|anycpu
 		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Release|anycpu.Build.0 = Release|anycpu
+		{373604B0-0A75-4930-80CD-A7F7F44C2FB3}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{373604B0-0A75-4930-80CD-A7F7F44C2FB3}.Debug|anycpu.Build.0 = Debug|anycpu
+		{373604B0-0A75-4930-80CD-A7F7F44C2FB3}.Release|anycpu.ActiveCfg = Release|anycpu
+		{373604B0-0A75-4930-80CD-A7F7F44C2FB3}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
