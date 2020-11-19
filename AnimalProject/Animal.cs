@@ -4,7 +4,7 @@ namespace AnimalProject
     public class Animal
     {
         private string _scientificName;
-        public string ScientificName { get { return _scientificName; } }
+        protected string ScientificName { get { return _scientificName; } set { _scientificName = value; } }
 
         public Animal(string ScientificName)
         {

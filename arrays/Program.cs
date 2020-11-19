@@ -32,23 +32,8 @@ namespace Today
             y = temp;
         }
 
-        public static bool doSomthing(int x, out int num)
+        static void ArrayOfArray()
         {
-            if (x > 10)
-            {
-                num = x * x;
-                return true;
-            }
-            else
-            {
-                num = x;
-                return false;
-            }
-        }
-        static void Main(string[] args)
-        {
-
-            /*
             string a = "hello dear students";
             char[] letters = a.ToCharArray();
             letters[6] = 'D';
@@ -59,7 +44,6 @@ namespace Today
             double[,] y = new double[5, 10];
 
             double[] x1 = new double[5];
-
             double[][] x = new double[5][];
 
             x[0] = new double[10];
@@ -69,13 +53,9 @@ namespace Today
             x[4] = new double[5];
 
             x[3][2] = 10;
-            */
-            /*
-            int a = 13, num;
-            bool res = doSomthing(a, out num);
-
-            Console.WriteLine($"Result is {res}, num is {num}");
-            */
+        }
+        static void Main(string[] args)
+        {
 
             /*
             int a = 10, b = 5 ;

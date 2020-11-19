@@ -10,7 +10,6 @@ namespace AnimalProject
 
         public Dog(string scientific_name, int gestation_period) : base(scientific_name, gestation_period)
         {
-
         }
         override public string PrintMe()
         {

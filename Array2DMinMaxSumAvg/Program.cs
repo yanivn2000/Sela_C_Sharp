@@ -9,6 +9,7 @@ namespace Array2DMinMaxSumAvg
         {
             //int [5,4]
             int[,] array = { { -33, -22, -44, -11 }, { 1, 2, 3, 4 }, { 9, 8, 6, 3 }, { 87, 35, 21, 22 }, { 87, 5, 21, 22 } };
+            //int[,] array2 = new int[5, 5];
 
             int counter = 0;
             foreach (var number in array)

@@ -199,11 +199,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module8-Loops", "Module8-Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingSystem", "BillingSystem\BillingSystem.csproj", "{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SstNumberBoolArray", "BooleanArray\SstNumberBoolArray.csproj", "{74939419-2746-4CE3-A6D4-49FA25BCDDBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalProject", "AnimalProject\AnimalProject.csproj", "{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "CopyConstructior", "CopyConstructior\CopyConstructior.csproj", "{BFFDF239-F139-4C3F-AE75-CB8773B9F01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutRefParameters", "OutRefParameters\OutRefParameters.csproj", "{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -607,10 +609,6 @@ Global
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Debug|anycpu.Build.0 = Debug|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Release|anycpu.ActiveCfg = Release|anycpu
 		{58A8CFA9-ADF4-4AFD-96AE-B649470AED14}.Release|anycpu.Build.0 = Release|anycpu
-		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Debug|anycpu.Build.0 = Debug|anycpu
-		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Release|anycpu.ActiveCfg = Release|anycpu
-		{27F937D3-371D-4A0F-844F-E09D0CCDC5EF}.Release|anycpu.Build.0 = Release|anycpu
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Debug|anycpu.ActiveCfg = Debug|anycpu
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{74939419-2746-4CE3-A6D4-49FA25BCDDBA}.Release|anycpu.ActiveCfg = Release|anycpu
@@ -619,5 +617,13 @@ Global
 		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Debug|anycpu.Build.0 = Debug|anycpu
 		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Release|anycpu.ActiveCfg = Release|anycpu
 		{BD4274D9-387F-41CB-92EF-1205BA4AD8ED}.Release|anycpu.Build.0 = Release|anycpu
+		{BFFDF239-F139-4C3F-AE75-CB8773B9F01A}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BFFDF239-F139-4C3F-AE75-CB8773B9F01A}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BFFDF239-F139-4C3F-AE75-CB8773B9F01A}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BFFDF239-F139-4C3F-AE75-CB8773B9F01A}.Release|anycpu.Build.0 = Release|anycpu
+		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Debug|anycpu.Build.0 = Debug|anycpu
+		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Release|anycpu.ActiveCfg = Release|anycpu
+		{F9456FFA-2F5A-4DC5-BD9C-CBCB3D59657B}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
